@@ -1,4 +1,4 @@
-# -SOeLab22-23
+# SOeLab22-23
 Repository per Sistemi Operativi e Lab. (A.A. 2022-23) 
 L'intero materiale puo' essere scaricato con il comando seguente:
 
