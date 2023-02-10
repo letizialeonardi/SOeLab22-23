@@ -1,2 +1,5 @@
 #inserisci qui i file che non devono essere scaricati se presenti
+.vs
 */*.vcxproj*
+*/*.sln
+*/.vs
