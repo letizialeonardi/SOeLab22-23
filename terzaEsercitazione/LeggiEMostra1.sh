@@ -21,10 +21,10 @@ do
 	read risposta
 	#usiamo in questo caso un case per vincolare meno l'utente nelle risposte!
 	case $risposta in
-	S* | s* | Y* | y*) 	echo info del file $1
-        			ls -la $1       #potrebbe anche essere un nome che inizia con . e quindi usiamo anche -a
-        			echo contenuto del file $1
-        			cat $1;;
+	S* | s* | Y* | y*) 	echo info del file $i
+        			ls -la $i       #potrebbe anche essere un nome che inizia con . e quindi usiamo anche -a
+        			echo contenuto del file $i
+        			cat $i;;
 	*) echo niente stampa di $i;;
 	esac
 done
