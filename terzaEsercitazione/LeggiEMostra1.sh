@@ -11,7 +11,7 @@ for i 	#eseguiamo per tutti i parametri di invocazione
 do
 	#controlliamo che il parametro corrente sia un file e sia leggibile, altrimenti errore!
 	if test ! -f $i -o ! -r $i
-	then 	echo Errore: $1 non file oppure non leggibile
+	then 	echo Errore: $i non file oppure non leggibile
 		exit 2
 	fi
 	#se arriviamo qui vuol dire che $i e' un file leggibile!
