@@ -8,9 +8,9 @@ int appendfile(char *f1)
 {  int outfile, nread;		/* usati per open/creat e valore ritorno read */		
    char buffer[BUFSIZ];		/* usato per i caratteri */
 
-	if ((outfile = open( f1, O_WRONLY)) < 0)
+	if ((outfile = open(f1, O_WRONLY)) < 0)
 	/* proviamo ad aprire il file in scrittura */
-	{ if ((outfile = creat( f1, PERM)) <0) 
+	{ if ((outfile = creat(f1, PERM)) <0) 
 		/* se non riusciamo ad aprirlo, la cosa piu plausibile e' che il file non esista, e quindi proviamo a crearlo */ 
    			return 1;	
 	}
