@@ -1,0 +1,78 @@
+NOTA BENE: In questo file sono riportati tutte le segnalazioni ottenute dal comando make andando a commentare via vie le direttive di include
+
+- OUTPUT PER COMMENTO DELLA PRIMA DIRETTIVA
+soELab@lica04:~/file/sestaEsercitazione$ make
+gcc   -Wall  copia-sbagliata.c -o copia-sbagliata
+copia-sbagliata.c: In function ‘copyfile’:
+copia-sbagliata.c:10:18: error: ‘BUFSIZ’ undeclared (first use in this function)
+      char buffer[BUFSIZ];    /* usato per i caratteri */
+                  ^~~~~~
+copia-sbagliata.c:10:18: note: each undeclared identifier is reported only once for each function it appears in
+copia-sbagliata.c:10:11: warning: unused variable ‘buffer’ [-Wunused-variable]
+      char buffer[BUFSIZ];    /* usato per i caratteri */
+           ^~~~~~
+copia-sbagliata.c: In function ‘main’:
+copia-sbagliata.c:39:10: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+       {  printf("Errore: numero di argomenti sbagliato dato che argc = %d\n", argc);
+          ^~~~~~
+copia-sbagliata.c:39:10: warning: incompatible implicit declaration of built-in function ‘printf’
+copia-sbagliata.c:39:10: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+copia-sbagliata.c:45:4: warning: incompatible implicit declaration of built-in function ‘printf’
+    printf("Ci sono stati degli errori durante la copia dato che status = %d\n", status);
+    ^~~~~~
+copia-sbagliata.c:45:4: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+makefile:11: recipe for target 'copia-sbagliata' failed
+make: *** [copia-sbagliata] Error 1
+ATTENZIONE: IN QUESTO CASO NON CI SONO SOLO WARNING MA ANCHE ERRORI PERCHE' NON VIENE TROVATO IL VALORE PER BUFSIZ
+
+- OUTPUT PER COMMENTO DELLA SECONDA DIRETTIVA
+soELab@lica04:~/file/sestaEsercitazione$ make
+gcc   -Wall  copia-sbagliata.c -o copia-sbagliata
+copia-sbagliata.c: In function ‘main’:
+copia-sbagliata.c:41:10: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+          exit(1);
+          ^~~~
+copia-sbagliata.c:41:10: warning: incompatible implicit declaration of built-in function ‘exit’
+copia-sbagliata.c:41:10: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+copia-sbagliata.c:47:2: warning: incompatible implicit declaration of built-in function ‘exit’
+  exit(status);
+  ^~~~
+copia-sbagliata.c:47:2: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+
+- OUTPUT PER COMMENTO DELLA TERZA DIRETTIVA
+soELab@lica04:~/file/sestaEsercitazione$ make
+gcc   -Wall  copia-sbagliata.c -o copia-sbagliata
+copia-sbagliata.c: In function ‘copyfile’:
+copia-sbagliata.c:17:11: warning: implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
+         { close(infile);
+           ^~~~~
+           pclose
+copia-sbagliata.c:21:18: warning: implicit declaration of function ‘read’; did you mean ‘fread’? [-Wimplicit-function-declaration]
+  while ((nread = read(infile, buffer, BUFSIZ)) > 0 ) /* ciclo di lettura fino a che nread e' maggiore di 0 */
+                  ^~~~
+                  fread
+copia-sbagliata.c:23:7: warning: implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+   if (write(outfile, buffer, nread) < nread) /* scriviamo sempre nread byte! */
+       ^~~~~
+       fwrite
+
+- OUTPUT PER COMMENTO DELLA QUARTA DIRETTIVA
+soELab@lica04:~/file/sestaEsercitazione$ make
+gcc   -Wall  copia-sbagliata.c -o copia-sbagliata
+copia-sbagliata.c: In function ‘copyfile’:
+copia-sbagliata.c:12:16: warning: implicit declaration of function ‘open’; did you mean ‘popen’? [-Wimplicit-function-declaration]
+  if ((infile = open(f1, O_RDONLY)) < 0) return 2;
+                ^~~~
+                popen
+copia-sbagliata.c:12:25: error: ‘O_RDONLY’ undeclared (first use in this function)
+  if ((infile = open(f1, O_RDONLY)) < 0) return 2;
+                         ^~~~~~~~
+copia-sbagliata.c:12:25: note: each undeclared identifier is reported only once for each function it appears in
+copia-sbagliata.c:15:17: warning: implicit declaration of function ‘creat’; did you mean ‘pread’? [-Wimplicit-function-declaration]
+  if ((outfile = creat(f2, PERM)) <0 )
+                 ^~~~~
+                 pread
+makefile:11: recipe for target 'copia-sbagliata' failed
+make: *** [copia-sbagliata] Error 1
+ATTENZIONE: IN QUESTO CASO NON CI SONO SOLO WARNING MA ANCHE ERRORI PERCHE' NON VIENE TROVATO IL VALORE PER O_RDONLY
+
