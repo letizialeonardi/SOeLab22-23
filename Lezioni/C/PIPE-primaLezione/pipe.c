@@ -37,7 +37,7 @@ int main (int argc, char **argv)
 		}
 
 		printf("DEBUG-Figlio %d sta per iniziare a scrivere una serie di messaggi, ognuno di lunghezza %d, sulla pipe dopo averli letti dal file passato come parametro\n", getpid(), MSGSIZE);
-		j=0; /* il figlio inizializza la sua variabile j per contare i messaggi che ha mandato al padre */
+		j=0; /* il figlio inizializza la sua variabile j per contare i messaggi che mandera' al padre */
 		/* il figlio legge tutto il file passato come parametro */
 		while (read(fd, mess, MSGSIZE)) /* il contenuto del file e' tale che in mess ci saranno 4 caratteri e il terminatore di linea */
 		{   
