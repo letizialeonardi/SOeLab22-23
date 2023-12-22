@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-js"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Sistemi Operativi e Lab. - Agentgroup</title>
+<meta name="generator" content="MediaWiki 1.24.1">
+<link rel="shortcut icon" href="https://www.didattica.agentgroup.unimo.it/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="https://www.didattica.agentgroup.unimo.it/wiki/opensearch_desc.php" title="Agentgroup (en)">
+<link rel="EditURI" type="application/rsd+xml" href="https://www.didattica.agentgroup.unimo.it/wiki/api.php?action=rsd">
+<link rel="alternate" hreflang="x-default" href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.">
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html">
+<link rel="alternate" type="application/atom+xml" title="Agentgroup Atom feed" href="https://www.didattica.agentgroup.unimo.it/wiki/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="stylesheet" href="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/load.css">
+<style>
+.mw-collapsible-toggle{float:right;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.mw-customtoggle,.mw-collapsible-toggle{cursor:pointer} caption .mw-collapsible-toggle{float:none} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:869aa9133c31e6040d4830b259da96a8 */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left; overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.highlight{font-weight:bold}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:f8d0c6895ce3ae14434c16b8fca59432 */
+.postedit-container{margin:0 auto;position:fixed;top:0;height:0;left:50%;z-index:1000;font-size:13px}.postedit-container:hover{cursor:pointer}.postedit{position:relative;top:0.6em;left:-50%;padding:.6em 3.6em .6em 1.1em;line-height:1.5625em;color:#626465;background-color:#f4f4f4;border:1px solid #dcd9d9;text-shadow:0 0.0625em 0 rgba(255,255,255,0.5);border-radius:5px;box-shadow:0 2px 5px 0 #ccc;-webkit-transition:all 0.25s ease-in-out;-moz-transition:all 0.25s ease-in-out;-ms-transition:all 0.25s ease-in-out;-o-transition:all 0.25s ease-in-out;transition:all 0.25s ease-in-out}.skin-monobook .postedit{top:6em !important}.postedit-faded{opacity:0}.postedit-icon{padding-left:41px;  line-height:25px;background-repeat:no-repeat;background-position:8px 50%}.postedit-icon-checkmark{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAAD///////9PfTf///80aRdTgjn///9Feij///////////9Rfzf///////////9PfjZRgDh1o1xOfTb///////+bwYqLtnj///////9PfTa82K////9WhT6YxIL///9QgDdTgzr////////j7uDl7eLq8efi693k7OH///////9UhjuBr2rp9uRUhjr///9YljVKgir///9WiTlYjT3////9/v57vFlbkT5PjC9dlD/5/fhuq09stUTs9uhxuElctCpfnT1huDFloEZloUZmpENmvDZpvDxpvTxqvjxrvT5rvT9rwTxsqktswD5uwkBvuUdxw0NztFBztU9ztVBzwkp0tlJ1xkd2t1R3uVR4w1F4xk54x014yE15uVZ5v1R5xVB6v1R7yFJ8wVh9xVl9yFR9yVd9ylN+xVh+yFd/x1l/yFeAylmEx1+Ny2uY0Hqe04Wj1Ymv3Ze33qLD47TJ5L3O6cPU7Mrq9eb2+/Q4j37OAAAAQHRSTlMAAQIEBAUFBQwPFB4fJCUoKiosQEhJS01RUlZZXmdydXaChYuSlJSWmJmoq6uur8LExcvM19fg5ejt8fX2+Pr7SljgewAAAKpJREFUGBkFwQNCAwAAAMDLtl3LtrG4rWXbtvX77gAgZ6grFwC0bhwNVgKgdPZx8b0dgLi+s7Wn0VoAqpfOI9+BNADZI7fLrz2pSEwGHZuH+78lSK8ZLkLezF3ooyUG3VPXq2USei9WngeyoG195yBYWDF3E/2pAhl1e9Gr8bGT+bfOFCC2fnvh4X7rcqIAQNNu+HT6sxkAjceTL/2ZAIhv+PorBwBJxfkA//dFHSCBy/UTAAAAAElFTkSuQmCC);background-image:url(https://www.didattica.agentgroup.unimo.it/wiki/resources/src/mediawiki.action/images/green-checkmark.png?2015-02-20T15:36:40Z)!ie;background-position:left}.postedit-close{position:absolute;padding:0 .8em;right:0;top:0;font-size:1.25em;font-weight:bold;line-height:2.3em;color:black;text-shadow:0 0.0625em 0 white;text-decoration:none;opacity:0.2;filter:alpha(opacity=20)}.postedit-close:hover{color:black;text-decoration:none;opacity:0.4;filter:alpha(opacity=40)}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:f5364964e9f8542145be6f0981bb0b81 */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{color:black;text-decoration:none}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}.suggestions a.mw-searchSuggest-link .special-query{ overflow:hidden;-o-text-overflow:ellipsis; text-overflow:ellipsis;white-space:nowrap}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:ae3fa4570b5ac0c6cf7b3776c8ae4d6f */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/load_002.css">
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: wikidb:resourceloader:filter:minify-css:7:b36fd1c042133c9c9b60260f7c29b237 */</style>
+<script src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/load_002.php"></script><script src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/load_004.php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Sistemi_Operativi_e_Lab.","wgTitle":"Sistemi Operativi e Lab.","wgCurRevisionId":12502,"wgRevisionId":12502,"wgArticleId":535,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Sistemi_Operativi_e_Lab.","wgIsProbablyEditable":false,"wgRestrictionEdit":[],"wgRestrictionMove":[]});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"editfont":"default","editondblclick":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":1,"extendwatchlist":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nickname":"","norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"rcdays":7,"rclimit":50,"rows":25,"showhiddencats":0,"shownumberswatching":1,"showtoolbar":1,"skin":"modern","stubthreshold":0,"thumbsize":5,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":1,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"watchrollback":0,
+"wllimit":250,"useeditwarning":1,"prefershttps":1,"language":"en","variant-gan":"gan","variant-iu":"iu","variant-kk":"kk","variant-ku":"ku","variant-shi":"shi","variant-sr":"sr","variant-tg":"tg","variant-uz":"uz","variant-zh":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"variant":"en"});},{},{});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});},{},{});
+/* cache key: wikidb:resourceloader:filter:minify-js:7:7997accf471504081fcc4f8241f456d5 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/load.php"></script>
+<style>[_nghost-ng-c4214649903]{font-family:Open Sans,sans-serif;color:#121212}</style></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Sistemi_Operativi_e_Lab skin-modern action-view">
+
+		<!-- heading -->
+		<div id="mw_header"><h1 id="firstHeading" lang="en"><span dir="auto">Sistemi Operativi e Lab.</span></h1></div>
+
+		<div id="mw_main">
+			<div id="mw_contentwrapper">
+				<!-- navigation portlet -->
+						<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab." title="View the content page [Alt+Maiusc+c]" accesskey="c">Page</a></li>
+				<li id="ca-talk" class="new"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php?title=Talk:Sistemi_Operativi_e_Lab.&amp;action=edit&amp;redlink=1" title="Discussion about the content page [Alt+Maiusc+t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php?title=Sistemi_Operativi_e_Lab.&amp;action=edit" title="This page is protected.
+You can view its source [Alt+Maiusc+e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php?title=Sistemi_Operativi_e_Lab.&amp;action=history" rel="archives" title="Past revisions of this page [Alt+Maiusc+h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+	
+				<!-- content -->
+				<div id="mw_content" role="main">
+					<!-- contentholder does nothing by default, but it allows users to style the text inside
+						 the content area without affecting the meaning of 'em' in #mw_content, which is used
+						 for the margins -->
+					<div id="mw_contentholder" class="mw-body">
+						<div class="mw-topboxes">
+							<div id="mw-js-message" style="display:none;"></div>
+							<div class="mw-topbox" id="siteSub">From Agentgroup</div>
+																				</div>
+
+						<div id="contentSub"></div>
+
+												<div id="jump-to-nav">Jump to:							<a href="#mw_portlets">navigation</a>, 							<a href="#searchInput">search</a>
+						</div>
+
+						<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><i><b>Copyright lezioni</b></i>:
+ Su indicazione dell'Ateneo si riporta questa comunicazione molto 
+importante, che vale chiaramente anche per le video-registrazioni e 
+altro materiale caricato sulla piattaforma Dolly/Moodle:
+"È vietata la copia e la riproduzione dei contenuti e immagini in 
+qualsiasi forma. È inoltre vietata la redistribuzione e la pubblicazione
+ dei contenuti e immagini non autorizzata espressamente dall'autore o 
+dall'Università di Modena e Reggio Emilia."
+</p><p><i><b>NOTA BENE</b>: la convalida della registrazione al sito dell'insegnamento (tramite la specifica <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/gestesami/login/index.php">applicazione</a>
+ (dove l'Account User che deve essere inserito è il nome utente che 
+viene utilizzato per l'autenticazione sui PC in laboratorio ed è il 
+numero che costituisce la prima parte dell'indirizzo e-mail 
+istituzionale!) avviene, da parte della Prof.ssa Leonardi, <b>SOLO</b> 
+dopo che lo studente ha consegnato il foglio di riepilogo firmato; il 
+foglio di riepilogo va stampato appena viene presentato dal browser, 
+altrimenti lo studente non lo riesce più a recuperare e lo può 
+recuperare solo la Prof.ssa Leonardi. </i>
+<b>Per gli studenti fino alla coorte 2019-20 (quindi con firma di 
+frequenza A.A. 2020-21) SI DEVE PROCEDERE ALLA REGISTRAZIONE SOLO SE SI 
+HANNO LE PROPEDEUTICITA' SODDISFATTE!!! Per gli studenti delle coorti 
+successive invece sono state eliminate le propedeuticità (si veda per i 
+dettagli la <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Propedeuticit.C3.A0">sezione</a>).</b> Nel caso di invio per mail, il foglio firmato va scansionato e inviato in allegato <b>SOLO</b> come <b>PDF</b>!
+
+</p>
+<hr>
+<p>Questa pagina fornisce il materiale didattico e le informazioni relative all'insegnamento di <a rel="nofollow" class="external text" href="https://offertaformativa.unimore.it/corso/insegnamento?cds_cod=20-212&amp;aa_ord_id=2015&amp;pds_cod=PDS0-2015&amp;aa_off_id=2021&amp;lang=ita&amp;ad_cod=INF-11&amp;aa_corso=2&amp;fac_id=10005&amp;coorte=2020&amp;anno_corrente=2021&amp;durata=3"><b>Sistemi Operativi e Lab. (9 CFU)</b></a> per il <a rel="nofollow" class="external text" href="http://www.ing.unimore.it/L/IngInf">Corso di Laurea in <b>Ingegneria Informatica</b></a>, secondo il D.M. 270/04. 
+</p>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="#" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Docente"><span class="tocnumber">1</span> <span class="toctext">Docente</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Ricevimento_Studenti"><span class="tocnumber">2</span> <span class="toctext">Ricevimento Studenti</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Esercitatore_.28per_la_parte_di_Laboratorio.29"><span class="tocnumber">3</span> <span class="toctext">Esercitatore (per la parte di Laboratorio)</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Moodle"><span class="tocnumber">4</span> <span class="toctext">Moodle</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Orario_delle_Lezioni"><span class="tocnumber">5</span> <span class="toctext">Orario delle Lezioni</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="#Propedeuticit.C3.A0"><span class="tocnumber">6</span> <span class="toctext">Propedeuticità</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="#Obiettivi_dell.27Insegnamento"><span class="tocnumber">7</span> <span class="toctext">Obiettivi dell'Insegnamento</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#Programma_dell.27Insegnamento"><span class="tocnumber">8</span> <span class="toctext">Programma dell'Insegnamento</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#Registro"><span class="tocnumber">9</span> <span class="toctext">Registro</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#Esame"><span class="tocnumber">10</span> <span class="toctext">Esame</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="#Test.2Fquiz_di_sbarramento"><span class="tocnumber">10.1</span> <span class="toctext">Test/quiz di sbarramento</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Prova_scritta_.28in_Laboratorio.29"><span class="tocnumber">10.2</span> <span class="toctext">Prova scritta (in Laboratorio)</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Istruzioni_specifiche_per_iniziare_una_prova_in_Laboratorio"><span class="tocnumber">10.3</span> <span class="toctext">Istruzioni specifiche per iniziare una prova in Laboratorio</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Regole_specifiche_per_le_prove_in_itinere"><span class="tocnumber">10.4</span> <span class="toctext">Regole specifiche per le prove in itinere</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Note_sugli_esami"><span class="tocnumber">10.5</span> <span class="toctext">Note sugli esami</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="#Appelli"><span class="tocnumber">11</span> <span class="toctext">Appelli</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="#Testi_Prove_Scritte_.28con_alcune_soluzioni.29"><span class="tocnumber">11.1</span> <span class="toctext">Testi Prove Scritte (con alcune soluzioni)</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Risultati_Prove_Scritte"><span class="tocnumber">11.2</span> <span class="toctext">Risultati Prove Scritte</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Consigli_Utili"><span class="tocnumber">11.3</span> <span class="toctext">Consigli Utili</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#Testi_Consigliati"><span class="tocnumber">12</span> <span class="toctext">Testi Consigliati</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#Slide_dell.27Insegnamento"><span class="tocnumber">13</span> <span class="toctext">Slide dell'Insegnamento</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="#Esempi_Interattivi"><span class="tocnumber">14</span> <span class="toctext">Esempi Interattivi</span></a>
+<ul>
+<li class="toclevel-2 tocsection-23"><a href="#Esempi_Interattivi_A.A._2022-23"><span class="tocnumber">14.1</span> <span class="toctext">Esempi Interattivi A.A. 2022-23</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#Esempi_Interattivi_A.A._precedenti"><span class="tocnumber">14.2</span> <span class="toctext">Esempi Interattivi A.A. precedenti</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-25"><a href="#Small_sh"><span class="tocnumber">15</span> <span class="toctext">Small sh</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="#Laboratorio"><span class="tocnumber">16</span> <span class="toctext">Laboratorio</span></a>
+<ul>
+<li class="toclevel-2 tocsection-27"><a href="#Laboratorio_A.A._2022-23"><span class="tocnumber">16.1</span> <span class="toctext">Laboratorio A.A. 2022-23</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Laboratorio_A.A._precedenti"><span class="tocnumber">16.2</span> <span class="toctext">Laboratorio A.A. precedenti</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-29"><a href="#Elaborati_svolti"><span class="tocnumber">17</span> <span class="toctext">Elaborati svolti</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="#Strumenti_Software"><span class="tocnumber">18</span> <span class="toctext">Strumenti Software</span></a></li>
+</ul>
+</div>
+
+<h1><span class="mw-headline" id="Docente">Docente</span></h1>
+<p><b><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Letizia" title="User:Letizia"> Prof. Letizia Leonardi</a></b>, <a rel="nofollow" class="external text" href="mailto:letizia.leonardi@unimo.it">letizia.leonardi@unimore.it</a>
+</p>
+<h1><span class="mw-headline" id="Ricevimento_Studenti">Ricevimento Studenti</span></h1>
+<p>Orario di ricevimento: Lunedì dalle 15 alle 17 (di norma, per 
+eventuali modifiche consultare gli avvisi di Moodle) con prenotazione 
+obbligatoria utilizzando il seguente <a rel="nofollow" class="external text" href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUpjOHltb0diQU85fGRlZmF1bHR8Y2QwZDZlOTY1NzdkZjE0MTY4YTI0ZDM1ZTE2MzUwNWE">link</a>.
+ Dal 27/09/2021, il ricevimento studenti potrà essere sia in presenza 
+che in remoto: specificare cosa si preferisce nel campo DOVE 
+dell'appuntamento; nel caso venga richiesta la modalità remota <i>ATTENZIONE A NON USARE</i> il meet generato automaticamente dagli appuntamenti Google, ma usare il seguente <a rel="nofollow" class="external text" href="http://meet.google.com/scq-zzoq-pki">link</a>.<br>
+Stanza: MO-27-01-019, primo piano, Edificio 27 (vedi <a rel="nofollow" class="external text" href="https://web.ing.unimo.it/spacemr/#?page=app_spacemr_space_map__app_spacemr_space_map_view_map_people_username&amp;spacemr_people_username=letizia">mappa</a>), Dipartimento di Ingegneria "Enzo Ferrari" (Università di Modena e Reggio Emilia) <br>
+Via P. Vivarelli 10, 41125 MODENA; Telefono 0592056135 
+<a rel="nofollow" class="external text" href="mailto:letizia.leonardi@unimo.it">letizia.leonardi@unimore.it</a>
+</p>
+<h1><span class="mw-headline" id="Esercitatore_.28per_la_parte_di_Laboratorio.29">Esercitatore (per la parte di Laboratorio)</span></h1>
+<p>A.A. 2022-23 e 2021-22: <b>Dott.ssa Silvia Cascianelli</b>, E-Mail: silvia.cascianelli@unimore.it
+</p><p>L'orario di ricevimento studenti per la parte di laboratorio è il
+ Giovedì dalle 14.30 alle 15.30 ed è necessario chiedere un appuntamento
+ mandando, entro il giorno prima, una e-mail alla Dott.ssa Silvia 
+Cascianelli, per concordare l'orario preciso e il luogo. Si noti che è 
+possibile fare ricevimento sia in remoto che in presenza; in questo 
+ultimo caso, a seconda delle disponilibità che verranno comunicate in 
+risposta alla e-mail di prenotazione, il ricevimento potrà avvenire 
+presso l'ufficio della docente (MO-27-02-029 - secondo piano, Edificio 
+27, Dipartimento di Ingegneria "Enzo Ferrari") o presso la sala riunioni
+ del Tecnopolo (MO-52-01-025 - primo piano, Edificio 52, Dipartimento di
+ Ingegneria "Enzo Ferrari"). Ogni appuntamento ha una durata prevista di
+ 20 minuti.
+</p>
+<h1><span class="mw-headline" id="Moodle">Moodle</span></h1>
+<p>Per l'A.A. 2022-23 la pagina Moodle è accessibile direttamente al <a rel="nofollow" class="external text" href="https://moodle.unimore.it/course/view.php?id=8073">link</a>.
+</p>
+<h1><span class="mw-headline" id="Orario_delle_Lezioni">Orario delle Lezioni</span></h1>
+<p>Le lezioni di questo insegnamento sono collocate nel II semestre e per 
+l'A.A. 2022-23 inizieranno il 27 Febbraio 2023 (Lunedì). 
+</p><p>Si avvisano gli studenti che durante la prima settimana di 
+lezione non si terranno esercitazioni, ma 4 ore di lezione al posto 
+della prevista esercitazione.
+<br>
+</p><p>L'orario delle lezioni è disponibile anche nella sezione Orario delle lezioni del sito del Dipartimento di Ingegneria alla
+[<a rel="nofollow" class="external free" href="https://www.orariolezioni.unimore.it/Orario/Dipartimento_di_Ingegneria_Enzo_Ferrari/2022-2023/1857/Docenti/LeonardiLetizia_014354.html">https://www.orariolezioni.unimore.it/Orario/Dipartimento_di_Ingegneria_Enzo_Ferrari/2022-2023/1857/Docenti/LeonardiLetizia_014354.html</a>
+pagina].
+<br>
+</p>
+<table cellpadding="10" border="2">
+  <tbody><tr>
+    <td width="119"><p align="JUSTIFY"><b> Lunedì</b></p></td>
+    <td width="195"><p align="JUSTIFY"><b> ore 11-13 (lezione)</b></p></td>
+    <td width="175"><p align="JUSTIFY"><b> Aula P1.2 (ex FA-1B)</b></p></td>
+  </tr>
+ <tr>
+    <td><p align="JUSTIFY"><b> Mercoledì</b></p></td>
+    <td><p align="JUSTIFY"><b> ore 9,45-11,45 (lezione)</b></p></td>
+    <td><p align="JUSTIFY"><b> Aula P1.2 (ex FA-1B)</b></p></td> 
+  </tr>  
+<tr>
+    <td><p align="JUSTIFY"><b> Giovedì</b></p></td>
+    <td><p align="JUSTIFY"><b> ore 8,30-12 (esercitazione)</b></p></td>
+    <td><p align="JUSTIFY"><b> LINFA allargato</b></p></td>
+  </tr> 
+</tbody></table>
+<p>
+<b>N.B.</b> Il Mercoledì nella pagina ufficiale dell'orario trovate lo 
+slot 10-12, ma dato che vi dovete spostare a Matematica, la lezione 
+inizierà alle 9,45 e poi finirà almeno alle 11,45 in modo da darvi tempo
+ di effettuare lo spostamento.
+
+</p><h1><span class="mw-headline" id="Propedeuticit.C3.A0">Propedeuticità</span></h1>
+<p>Per gli studenti <b>fino alla coorte 2019-20</b> (quindi con firma di
+ frequenza A.A. 2020-21), le propedeuticità obbligatorie per il 
+superamento dell'esame sono Fondamenti di Informatica I e Lab., 
+Fondamenti di Informatica II e Lab. Per gli studenti delle <b>coorti successive</b>,
+ invece, sono state eliminate le propedeuticità obbligatorie, ma rimane 
+fortemente consigliato che prima di tentare il superamento dell'esame di
+ Sistemi Operativi e Lab. si siano superati gli esami di Fondamenti di 
+Informatica I e Lab. e Fondamenti di Informatica II e Lab., mentre 
+rimane solo consigliata la propedeuticità di Calcolatori Elettronici e 
+Lab.
+</p><p><b>In caso di superamento dell'esame senza propeduticità obbligatorie rispettate IL VOTO VERRÀ PERSO!!!</b>
+</p>
+<h1><span class="mw-headline" id="Obiettivi_dell.27Insegnamento">Obiettivi dell'Insegnamento</span></h1>
+<div class="floatright"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/File:Faq.png" class="image"><img alt="Faq.png" src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/Faq.png" width="90" height="90"></a></div>
+<p>L'insegnamento ha come obiettivo formativo quello di fornire la 
+conoscenza e la capacità di comprensione di base dei Sistemi Operativi 
+introducendo alcuni aspetti della programmazione di sistema in UNIX 
+relativamente sia al linguaggio comandi (Shell) e sia al linguaggio di 
+programmazione C, applicandoli a progetti concorrenti in ambiente locale
+ di complessità crescente.
+</p>
+<h1><span class="mw-headline" id="Programma_dell.27Insegnamento">Programma dell'Insegnamento</span></h1>
+<p>Gli argomenti che verranno affrontati saranno: 
+</p><p>1) Introduzione (circa 1 CFU):
+</p>
+<ul><li> <b>Classificazione dei Sistemi Operativi</b>. In particolare, sistemi multi-utente e multiprocesso.<br></li>
+<li> <b>Il Sistema Operativo come insieme di gestori delle risorse</b>. 
+Introduzione al concetto di processo/thread e loro gestore: scheduling; 
+il problema del deadlock. Introduzione alla gestione della memoria e in 
+particolare la memoria virtuale.  Introduzione al concetto di file e 
+directory e loro gestore: il File System a livello di organizzazione 
+logica e fisica. <br></li></ul>
+<p>2) <b>La programmazione di sistema utilizzando i linguaggi comandi</b>
+ (circa 2 CFU). Oltre ai tipici comandi utilizzati da linea di comando, 
+si presenterà la sintassi per scrivere degli script, facendo anche uso 
+della ricorsione, utilizzando una Shell di UNIX.<br>
+</p><p>3) <b>La programmazione di sistema utilizzando il linguaggio di programmazione C per UNIX</b>
+ (circa 3 CFU). Le primitive di basso livello per l'accesso ai file (in 
+particolare, open, creat, close, read, write e lseek) e le primitive per
+ la creazione, comunicazione e sincronizzazione dei processi (in 
+particolare, fork, exit, wait, pipe, signal e kill).<br>
+</p><p>4) <b>Laboratorio di Sistemi Operativi</b> (circa 3 CFU). 
+Esercitazioni pratiche utilizzando computer provvisti di sistema 
+operativo UNIX/LINUX. Le esercitazioni avranno come obiettivo la pratica
+ della programmazione di sistema UNIX, utilizzando sia il linguaggio 
+dello Shell che il linguaggio di programmazione C per arrivare allo 
+svolgimento di un progetto completo di ricerca ricorsiva nel file system
+ avente una parte in Shell e una in C che si coordinano l'un l'altra. <br>
+</p>
+<h1><span class="mw-headline" id="Registro">Registro</span></h1>
+<p>Dopo ogni lezione/esercitazione verrà compilato il registro con l'indicazione degli argomenti trattati. 
+</p><p>Per l'A.A. corrente 2022-23, il registro si trova al <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/registri/Registri_html/RegistroSOeLABAA_2022-2023.html">link</a>.
+</p><p>I registri relativi agli anni accademici precedenti sono accessibili ai seguenti link:
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<td> * <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/registri/Registri_html/RegistroSOeLABAA_2021-2022.html">Registro A.A. 2021-22</a>
+</td>
+<td> * <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/registri/Registri_html/RegistroSOeLABAA_2020-2021.html">Registro A.A. 2020-21</a>
+</td>
+<td> * <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/registri/Registri_html/RegistroSOeLABAA_2019-2020.html">Registro A.A. 2019-20</a>
+</td>
+<td> * <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/registri/Registri_html/RegistroSOeLABAA_2018-2019.html">Registro A.A. 2018-19</a>
+</td></tr>
+<tr>
+<td> * <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/registri/Registri_html/RegistroSOeLABAA_2017-2018.html">Registro A.A. 2017-18</a>
+</td>
+<td> * <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/registri/Registri_html/RegistroSOeLABAA_2016-2017.html">Registro A.A. 2016-17</a>
+</td>
+<td> * <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/registri/Registri_html/RegistroSOeLABAA_2015-2016.html">Registro A.A. 2015-16</a>
+</td>
+<td> * <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/registri/Registri_html/RegistroSOeLABAA_2014-2015.html">Registro A.A. 2014-15</a>
+</td></tr>
+<tr>
+<td> * <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/registri/Registri_html/RegistroSOeLABAA_2013-2014.html">Registro A.A. 2013-14</a>
+</td>
+<td> * <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/RegistroAA2012-13.html">Registro A.A. 2012-13</a>
+</td>
+<td> * <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/RegistroAA2011-12.html">Registro A.A. 2011-12</a>
+</td>
+<td> * <a rel="nofollow" class="external text" href="https://www.ingmo-old.unimo.it/campusone/VisualizzazioneIngegneria/Syllabus.asp?IdIns=11017">Registro A.A. 2010-11</a>
+</td></tr></tbody></table>
+<h1><span class="mw-headline" id="Esame">Esame</span></h1>
+<div class="floatright"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/File:Tesina.png" class="image"><img alt="Tesina.png" src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/Tesina.png" width="90" height="90"></a></div>
+<p>L'esame si compone (dall'A.A. 20-21) di un test/quiz e di una prova 
+scritta, che vengono svolti entrambi utilizzando un PC Linux. Per 
+maggiori dettagli, vedere il seguito di questa pagina.
+</p><p>Durante lo svolgimento dell’esame possono essere consultati 
+appunti cartacei o in formato elettronico (ma non online), così come 
+possono essere usati file precedentemente sviluppati e consultati 
+manuali presenti in Linux.
+</p><p>Il test/quiz di sbarramento, per definizione, non produce un voto, ma consente l'accesso alla prova scritta. 
+<b>N.B. Durante la prima lezione dell'A.A. 2022-23 verrà proposta una 
+modifica riguardo al test/quiz e se scelta porterà ad un aggiornamento 
+della pagina nelle parti relative! IL RISULTATO DEL SONDAGGIO HA PORTATO
+ AD UN MANTENIMENTO DEL TEST/QUIZ NELLA FORMA ATTUALE!</b>
+</p><p>La sufficienza della prova scritta è rappresentata da un voto 
+&gt;= 18: il voto ottenuto con lo scritto rappresenterà, se sufficiente,
+ la valutazione della verifica.
+</p><p><b>Dall'A.A. 2014-15, allo studente che risulti sufficiente ad 
+una prova NON sarà consentito ripetere la prova per migliorare il voto! 
+Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/GiustificazionePerMancanzaDiPossibilit%C3%A0RifiutoVoto.pdf">documento</a> possono essere trovati i riferimenti normativi UNIMORE a giustificazione di ciò.</b>
+
+</p><p>Saranno organizzate anche DUE VERIFICHE IN ITINERE (LA PRIMA 
+SULLA PARTE IN  SHELL E LA SECONDA SULLA PARTE IN C, si veda la sezione <a href="#Regole_specifiche_per_le_prove_in_itinere"> Regole specifiche per le prove in itinere</a>): in questo caso, la valutazione finale dell'insegnamento deriverà dalla media arrotondata per difetto delle due prove.
+</p><p><b>Dall'A.A. 2022-23</b>, per l'iscrizione agli esami si useranno le liste di <b>ESSE3</b>.
+ Poichè però per il calcolo dei voti viene usata una applicazione 
+specifica si rende necessaria una REGISTRAZIONE a tale applicazione il 
+cui link è presente in questa pagina nella sezione <a href="#Appelli"> Appelli</a>.
+</p><p>Si precisa che in caso di valutazione insufficiente, sia nel 
+test/quiz che nella prova scritta, lo studente che non avrà preso 
+visione dei suoi errori NON potrà iscriversi a nessuna prova successiva!
+ 
+</p>
+<h2><span class="mw-headline" id="Test.2Fquiz_di_sbarramento">Test/quiz di sbarramento</span></h2>
+<p>Dall'A.A. 2020-21 è stato introdotto un test/quiz di sbarramento a 
+risposte multiple (di cui solo una sufficiente) sui comandi UNIX/Linux 
+(20 domande, soglia di superamento 15/20!); il tempo a disposizione per 
+tale test/quiz è 20 minuti; il test/quiz si svolge tramite Moodle: il 
+link al Moodle dell'A.A. corrente si trova nella sezione <a href="#Moodle">Moodle</a>.<br>
+</p>
+<h2><span class="mw-headline" id="Prova_scritta_.28in_Laboratorio.29">Prova scritta (in Laboratorio)</span></h2>
+<p>La prova scritta serve a verificare, in particolare, che lo studente abbia acquisito le seguenti capacità: 
+</p>
+<ul><li> Capacità di scrivere e verificare software in linguaggio comandi dello Shell di UNIX.</li>
+<li> Capacità di scrivere e verificare software in linguaggio di 
+programmazione C per UNIX mediante le primitive di basso livello per 
+l'accesso ai file e per la creazione, sincronizzazione e comunicazione 
+dei processi. </li></ul>
+<div class="floatleft"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/File:ModalitaEsame.png" class="image"><img alt="ModalitaEsame.png" src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/ModalitaEsame.png" width="120" height="111"></a></div>
+<blockquote>
+<p>Quindi, la prova scritta comprende un singolo esercizio che richiede 
+la soluzione di un problema di sincronizzazione in ambito locale, 
+ottenuta facendo riferimento al sistema operativo UNIX, che si compone 
+di due parti:<br>
+</p>
+<ol><li> una parte in <b>Shell</b> che deve risolvere un sottoproblema di esplorazione nel file system;<br></li>
+<li> una parte in <b>linguaggio C</b> che deve risolvere un sottoproblema concorrente facendo uso delle primitive di gestione dei processi proprie di UNIX.<br></li></ol>
+</blockquote>
+<p><br>
+Il tempo a disposizione per la prova scritta è di 120 MINUTI per l'esame
+ completo (se in presenza, mentre in remoto potrebber essere 110 
+minuti).
+<br>
+</p><p>Dato che lo svolgimento della prova scritta avviene utilizzando 
+un PC Linux, lo studente dovrà produrre un insieme di file 
+corrispondenti alla soluzione dell'esercizio: i file che risolvono il 
+primo sottoproblema DEVONO avere il nome che termina con <b>.sh</b> (si 
+vedano le indicazioni specifiche sui nomi nel seguito), mentre i file 
+che risolvono il secondo problema DEVONO avere il nome che termina con <b>.c</b>
+ per il file che contiene il sorgente in linguaggio C (si veda le 
+indicazioni specifiche sul nome nel seguito) e il nome makefile per 
+quello che verrà usato dal comando make.<br>
+<b>Nota bene:</b> Saranno corrette SOLO le soluzioni che non conterranno
+ né errori di sintassi nella parte Shell e C (cioè per il C errori di 
+compilazione) né errori di collegamento (linking) nella parte C (cioè 
+errori segnalati dal gcc).
+</p>
+<h2><span class="mw-headline" id="Istruzioni_specifiche_per_iniziare_una_prova_in_Laboratorio">Istruzioni specifiche per iniziare una prova in Laboratorio</span></h2>
+<p><b>AGGIORNAMENTO DEL 16/05/2022</b>
+</p><p>Si ricorda che le regole per gli esami in presenza (e solo nei casi previsti a distanza) sono caricate su <b>Moodle</b>! Tale caricamento è presente da fine Marzo 2022 (prima che si svolgesse la I Prova in Itinere).
+</p>
+<h2><span class="mw-headline" id="Regole_specifiche_per_le_prove_in_itinere">Regole specifiche per le prove in itinere</span></h2>
+<p>1) Alle prove in itinere di un certo A.A. possono partecipare (chiaramente) <b>SOLO</b> gli studenti che stanno <b>frequentando</b>
+ in tale A.A. In particolare, l'applicazione usata per la iscrizione 
+visualizza l'appello corrispondente ad una prova in itinere SOLO agli 
+studenti che hanno effettuato la registrazione all'applicazione in 
+quello specifico A.A. 
+Studenti che si sono registrati all'applicazione in anni precedenti e 
+che <b>NON</b> hanno già partecipato a una qualche prova potranno 
+chiedere l'iscrizione ad una prova in itinere sono presentandosi 
+personalmente una volta chiuse le iscrizioni: tali richiesta saranno 
+soddisfatte se e solo se ci sarà un turno pianificato non saturo.<br>
+2) Alla seconda prova in itinere sulla SOLA PARTE IN LINGUAGGIO C 
+possono partecipare solo gli studenti che hanno superato la prima prova 
+in itinere. 
+<br>
+3) La validità della prima prova in itinere (PARTE SHELL) è di un anno 
+solare e quindi fino alla sessione di esami di Gennaio-Febbraio 
+dell'anno seguente (cioe' fino al termine dell'A.A. in cui si è svolta).
+ In altre parole, una volta superata la parte SHELL, lo studente può 
+svolgere sempre solo la PARTE C per i seguenti appelli dell'A.A., anche 
+in caso di prendere una insufficienza nella PARTE C. Solo se lo studente
+ NON riesce a superare la PARTE C entro il termine previsto, allora 
+dovrà sostenere l'esame totale.<br>
+4) La regola precedente NON vale se però uno studente ad un certo punto 
+decide di iscriversi alla prova totale: in tal caso, il voto conseguito 
+nella PARTE SHELL viene annullato!<br>
+5) Nel caso in cui il primo appello della sessione dopo le lezioni 
+risultasse troppo ravvicinato alla seconda prova in itinere, chi non 
+supera la seconda prova in itinere potrà svolgere la SOLA PARTE IN 
+LINGUAGGIO C esclusivamente nel secondo appello della sessione: questo 
+vincolo può derivare sia dalla data di scadenza all'appello e anche 
+perchè il lasso di tempo a disposizione fra un esame e l'altro sarebbe 
+troppo poco o per consentire ad uno studente insufficiente di recuperare
+ le proprie carenze oppure anche solo per avere i risultati della 
+seconda prova in itinere.<br>
+6) Il tempo per svolgere le prove in itinere è rispettivamente di 60 
+minuti a per la prima prova in itinere (PARTE SHELL) e di 90 minuti per 
+la seconda prova in itinere (PARTE C) se in presenza (in remoto potrebbe
+ essere un tempo minore).
+</p>
+<h2><span class="mw-headline" id="Note_sugli_esami">Note sugli esami</span></h2>
+<div class="floatleft"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/File:Attenzione.png" class="image"><img alt="Attenzione.png" src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/Attenzione.png" width="60" height="60"></a></div> 
+<blockquote>
+<ol><li>Si ricorda che in caso di valutazione insufficiente lo studente 
+dovrà prendere visione dei suoi errori  (per cercare di non commetterli 
+nuovamente) PRIMA di poter partecipare ad una qualunque altra prova. <b>ATTENZIONE:
+ la visione DEVE avvenire al massimo entro 2/3 settimane dalla 
+pubblicazione/comunicazione dei risultati e, comunque, almeno 2/3 
+settimane prima della scadenza per la iscrizione all'appello successivo!</b> <i>La stessa tempistica vale a maggior ragione se viene richiesta la consegna di una versione corretta!</i></li>
+<li>Le prove scritte (a meno di richieste da parte di studenti Fuori Corso) si svolgono solo durante i periodi di esami.</li>
+<li>Dall'A.A. 2014-15, non sarà possibile ripetere la prova scritta per migliorare il voto!</li>
+<li>Nella sezione laboratorio il 10/04/2020 sono stati caricati dei file per la creazione 'veloce' di gerarchie di prova.</li></ol>
+</blockquote>
+<h1><span class="mw-headline" id="Appelli">Appelli</span></h1>
+<p><b>ATTENZIONE</b>: Si ricorda che nell'A.A. 2020-21 è stato 
+introdotto un test/quiz di sbarramento a risposte multiple (di cui solo 
+una sufficiente) sui comandi UNIX/Linux (20 domande, soglia di 
+superamento 15/20!<br>
+</p><p><b>AGGIORNAMENTO DELL'18/12/2023: da domani 19/12/2023 sarà possibile iscriversi all'appello di Gennaio!<br></b>
+<b>AGGIORNAMENTO DELL'11/12/2023: Si confermano le date indicate per gli
+ appelli di Gennaio e Febbraio: entro fine settimana verrà data 
+comunicazione dell'apertura degli appelli!</b>
+</p><p><b>NOTA DEL 26/09/2023: Sono stati inseriti su ESSE3 le date 
+degli appelli; si faccia attenzione alle note indicate nel seguito; per 
+ora gli appelli sono chiusi, cioè non è possibile procedere alla 
+iscrizione e saranno aperti solo qualche settimana prima di ogni appello
+ con le regole stabilite nell'A.A. 2022-23!</b>
+</p><p>Per tutte le date, il luogo esatto dell'esame e l'orario esatto 
+verrà comunicato in seguito, così come le date di scadenza delle 
+iscrizioni verrà fissata appena inserite le date nell'applicazione.
+</p><p>Per la sessione di esami di Gennaio-Febbraio 2024, si comunica che le date fissate sono: <br>
+1) Mer. 17/01/2024 (mattina); periodo di iscrizione 19/12/2023-10/01/2024. <br> 
+2) Mer. 14/02/2024 (mattina); periodo di iscrizione 11/01/2024-07/02/2024.  <br> 
+I due appelli di Gennaio-Febbraio 2024 sono stati inseriti nell'applicazione!
+</p><p>Per la sessione di esami di Giugno-Settembre 2024, si comunica che le date fissate sono: <br>
+3) Gio. 6/06/2024 (mattina); PER LA SOLA SECONDA PROVA IN ITINERE; 
+ATTENZIONE CHE QUESTA DATA POTREBBE ESSERE CANCELLATA NEL CASO SI RIESCA
+ A SVOLGERE LA SECONDA PROVA IN ITINERE NELL'ULTIMA ESERCITAZIONE 
+PREVISTA DA ORARIO; <br>
+4) Mer. 12/06/2024 (mattina); <br>
+5) Mer. 10/07/2024 (mattina); <br>
+6) Mer. 11/09/2024 (mattina); <br>
+Gli appelli nell'applicazione verranno inseriti verso la fine delle lezioni del II semestre.
+</p><p>Si sottolinea che se non si dovesse riuscire a fissare la seconda
+ prova in itinere, il sesto appello corrisponderebbe alla prima prova 
+"in itinere" (PI) sulla parte Shell che verrà svolta durante la 
+settimana di interruzione delle lezioni (riservata ai soli studenti che 
+si sono iscritti o hanno modificato quest'anno la loro iscrizione 
+all'applicazione); nel caso si decida di non fissare le prove in 
+itinere, la data indicata per la seconda prova in itinere sarebbe a 
+questo punto un appello 'normale'!
+</p><p>Si ribadisce che tutte le date sopra indicate sono state inserite
+ in ESSE3 per rendere visibile, a chi deve fare il controllo 
+sull'inserimento degli appelli (le trovate usando la funzione Ricerca 
+Appelli SENZA fare il login in ESSE3, usando la  <a rel="nofollow" class="external text" href="https://www.esse3.unimore.it/Guide/PaginaListaAppelli.do">pagina</a>),
+ che questi sono stati pianificati: il periodo di iscrizione però a 
+queste prove è volutamente chiuso e verrà aperto solo nei tempi 
+necessari per garantire la possibilità agli studenti di iscriversi.
+Dato che per il calcolo dei voti viene usata un’applicazione specifica 
+si rende necessaria la registrazione citata all'inizio della pagina 
+usando 
+l'<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/gestesami/login/index.php">applicazione</a> specifica che però verrà usata solo dalle docenti e per comunicare prima della verbalizzazione i voti delle prove scritte.
+<br><i><b>NOTA BENE</b>: la convalida della registrazione al sito del 
+corso avviene, da parte della Prof.ssa Leonardi,  SOLO dopo che lo 
+studente ha consegnato il foglio di riepilogo firmato; il foglio di 
+riepilogo va stampato appena viene presentato dal browser altrimenti lo 
+studente non lo riesce più a recuperare e lo può recuperare solo la 
+Prof.ssa Leonardi. <b>PROCEDERE ALLA REGISTRAZIONE SOLO SE SI HANNO LE 
+PROPEDEUTICITA' SODDISFATTE, per gli studenti per i quali sono ancora in
+ vigore!!!</b> Nel caso di invio per mail, il foglio firmato va scansionato e inviato in allegato <b>SOLO</b> come <b>PDF</b>!</i>
+
+</p><p>Di norma le iscrizioni/cancellazioni ad un appello si chiudono 
+almeno una settimana dell'appello e comunque le indicazioni della data 
+di chiusura dell'appello sono riportate per ogni appello.
+</p><p><b>Si ricorda però che la iscrizione relativa agli appelli di 
+Giugno e Luglio (quelli subito dopo la conclusione delle lezioni) sarà 
+possibile per gli studenti in corso solo se avranno compilato il 
+questionario di rilevazione dell'opinione studenti (OPIS).</b> 
+</p>
+<h2><span class="mw-headline" id="Testi_Prove_Scritte_.28con_alcune_soluzioni.29">Testi Prove Scritte (con alcune soluzioni)</span></h2>
+<p>I testi delle prove scritte si trovano nella pagina <a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/EsamiSO" title="EsamiSO">Esami di Sistemi Operativi e Lab.</a>: di alcuni di essi viene fornita anche una possibile soluzione.
+</p><p>Tramite l'<a rel="nofollow" class="external text" href="https://www.didattica.agentgroup.unimo.it/ExamsFinder">applicazione</a>
+ (sviluppata da Tommaso Labieni, laureato in Ingegneria Informatica) si 
+possono fare delle ricerche mirate secondo vari criteri di ricerca sui 
+testi di esame presenti nella pagina sopra riferita. 
+Alla data del 30/08/2022, per quanto riguarda la ricerca per categorie, 
+sono disponibili le categorie di tutti gli esami.
+</p>
+<h2><span class="mw-headline" id="Risultati_Prove_Scritte">Risultati Prove Scritte</span></h2>
+<p>Dall'A.A. 2010-11, gli studenti che hanno partecipato ad una prova 
+scritta (escluso la prima Prova in Itinere) di Sistemi Operativi e Lab. 
+possono prendere visione del voto <b>globale</b> collegandosi 
+all'applicazione utilizzata per l'iscrizione alla prova e selezionando 
+la voce Dati iscrizione corso (in lato a sinistra).
+</p><p>Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Statistiche/StatistichePI-12Aprile2023.xlsx">documento</a> si trova la statistica relativa ai risultati della Prima Prova in Itinere dell'A.A. 2022-23 svolta il 12 Aprile 2023.
+</p><p>Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Statistiche/StatistichePI-13Aprile2022.xlsx">documento</a> si trova la statistica relativa ai risultati della Prima Prova in Itinere dell'A.A. 2021-22 svolta il 13 Aprile 2022.
+</p><p>Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Statistiche/StatistichePI-22Aprile2021.xlsx">documento</a> si trova la statistica relativa ai risultati della Prima Prova in Itinere dell'A.A. 2020-21 svolta il 22 Aprile 2021.
+</p><p>NOTA BENE PER ORA LA STATISTICA DELLA PRIMA PROVA IN ITINERE DEL A.A. 2019-20 MANCA!
+</p><p>Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Statistiche/StatistichePI-5Aprile2019.xls">documento</a> si trova la statistica relativa ai risultati della Prima Prova in Itinere dell'A.A. 2018-19 svolta il 5 Aprile 2019.
+</p><p>Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Statistiche/StatistichePI-11Aprile2018.xls">documento</a> si trova la statistica relativa ai risultati della Prima Prova in Itinere dell'A.A. 2017-18 svolta l'11 Aprile 2018.
+</p><p>Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Statistiche/StatistichePI-7Aprile2017.xls">documento</a> si trova la statistica relativa ai risultati della Prima Prova in Itinere dell'A.A. 2016-17 svolta il 7 Aprile 2017.
+</p><p>Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Statistiche/StatistichePI-15Aprile2016.xls">documento</a> si trova la statistica relativa ai risultati della Prima Prova in Itinere dell'A.A. 2015-16 svolta il 15 Aprile 2016.
+</p><p>Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Statistiche/StatistichePI-17Aprile2015.xls">documento</a> si trova la statistica relativa ai risultati della Prima Prova in Itinere dell'A.A. 2014-15 svolta il 17 Aprile 2015.
+</p><p>Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Statistiche/StatistichePI-11Aprile2014-new.xls">documento</a> si trova la statistica relativa ai risultati della Prima Prova in Itinere dell'A.A. 2013-14 svolta il 11 Aprile 2014.
+</p><p>Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Statistiche/StatistichePI-12Aprile2013.xls">documento</a> si trova la statistica relativa ai risultati della Prima Prova in Itinere dell'A.A. 2012-13 svolta il 12 Aprile 2013.
+</p><p>Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Statistiche/StatistichePI-13Aprile2012.xls">documento</a> si trova la statistica relativa ai risultati della Prima Prova in Itinere dell'A.A. 2011-12 svolta il 13 Aprile 2012.
+</p><p>Nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Statistiche/StatistichePI-29Aprile2011.xls">documento</a> si trova la statistica relativa ai risultati della Prima Prova in Itinere dell'A.A. 2010-11 svolta il 29 Aprile 2011.
+</p>
+<h2><span class="mw-headline" id="Consigli_Utili">Consigli Utili</span></h2>
+<div class="floatleft"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/File:Attenzione.png" class="image"><img alt="Attenzione.png" src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/Attenzione.png" width="60" height="60"></a></div> 
+<blockquote>
+<p>Per superare agevolmente la prova scritta, che si svolgerà in 
+laboratorio, si consiglia agli studenti di seguire con continuità le 
+lezioni ed, in particolare, le esercitazioni in laboratorio. 
+Inoltre, si consiglia di preparare la prova scritta sperimentando 
+direttamente i concetti presentati a lezione sul calcolatore. Può 
+risultare estremamente difficile superare con successo l'esame senza una
+ conoscenza di tipo sperimentale, ottenuta con esercitazioni in 
+laboratorio.
+</p>
+</blockquote>
+<h1><span class="mw-headline" id="Testi_Consigliati">Testi Consigliati</span></h1>
+<div class="floatright"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/File:Textbook.png" class="image"><img alt="Textbook.png" src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/Textbook.png" width="100" height="78"></a></div>
+<p>Materiale come slide, esercizi e testi di esame (e alcune soluzioni) sono disponibili in questa pagina.
+</p><p>Comunque, testi di riferimento possono essere:
+</p><p>HAVILAND K., GRAY D., SALAMA B., Unix System Programming, Casa Editrice Addison-Wesley, 1999.<br>
+BOURNE S. R., UNIX System V, Casa Editrice Addison-Wesley, 1990.<br>
+</p><p>In alternativa la seconda parte del testo seguente contiene tutti
+ gli argomenti del corso (mentre la prima parte puo' essere usata per un
+ ripasso del Linguaggio C):
+</p><p>BELLAVIA G., CORRADI A., LEONARDI L., Fondamenti di Informatica 
+II: Dispense del corso (seconda edizione), Casa Editrice Esculapio, 
+Progetto Leonardo, 1994.<br>
+</p><p>Per un eserciziario relativo al Linguaggio C si segnala: 
+</p><p>LEONARDI L.: Linguaggio C: Raccolta di esercizi e relative soluzioni, Ed. Esculapio - Progetto Leonardo, 1996. <br>
+</p>
+<h1><span class="mw-headline" id="Slide_dell.27Insegnamento">Slide dell'Insegnamento</span></h1>
+<div class="floatright"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/File:Lucidi.png" class="image"><img alt="Lucidi.png" src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/Lucidi.png" width="100" height="66"></a></div>
+<p><i><b>Copyright lezioni a distanza</b></i>: Su indicazione 
+dell'Ateneo si riporta questa comunicazione molto importante, che vale 
+chiaramente anche per le video-registrazioni caricate sulla piattaforma 
+Dolly/Moodle:
+"E' vietata la copia e la riproduzione dei contenuti e immagini in 
+qualsiasi forma. E' inoltre vietata la redistribuzione e la 
+pubblicazione dei contenuti e immagini non autorizzata espressamente 
+dall'autore o dall'Università di Modena e Reggio Emilia."
+</p><p>Sono disponibili i file in formato PDF con le slide usate durante
+ le lezioni di teoria sui seguenti argomenti che necessitano tutti, a 
+parte il primo file, di password di lettura (tale password sarà 
+comunicata durante la prima lezione), oltre agli 
+esempi mostrati interattivamente e che sono reperibili nella sezione <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Esempi_Interattivi"><font color="#0000ff"> Esempi Interattivi</font></a>:
+</p>
+<ol>
+<li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/prog22-23.pdf"><font color="#0000ff">Programma del corso e modalità di esame - versione del 25/02/2023</font></a>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/SOIntrod.pdf"><font color="#0000ff">Slide introduttive sui Sistemi Operativi (con password di lettura) - versione del 03/03/2023 (corretta una parola)</font></a> 
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/FILES.pdf"><font color="#0000ff">Slide introduttive su File System (con password di lettura) - versione del 27/02/2022</font></a>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/UNIXSH.pdf"><font color="#0000ff">Slide su UNIX e  Shell (con password di lettura) - versione del 14/03/2023 (corrette slide 23, 24 e 25)</font></a> 
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/FILEC.pdf"><font color="#0000ff">Slide
+ sulle primitive UNIX per file facenti parte della libreria standard del
+ linguaggio C (con password di lettura) - versione del 16/04/2023</font></a>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/UNIXFILE.pdf"><font color="#0000ff">Slide sulle tabelle di UNIX per l'interazione con i file (con password di lettura) - versione del 3/04/2022</font></a>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/UNIXPROC.pdf"><font color="#0000ff">Slide sui processi UNIX (con password di lettura) - versione del 27/04/2023 (corretta slide 23)</font></a><font color="#0000ff"> </font>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/UNIXPIPE.pdf"><font color="#0000ff">Slide sulle pipe e fifo UNIX (con password di lettura) - versione del 12/05/2022</font></a>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/UNIXSEGNALI.pdf"><font color="#0000ff">Slide sui segnali UNIX (con password di lettura) - versione del 20/05/2022</font></a>
+</li></ol>
+<p>Inoltre sono disponibili le <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/LezioneSicurezzaxStudenti.pdf"><font color="#0000ff">Slide sulla sicurezza degli studenti</font></a>. 
+</p><p>Altra documentazione: <br>
+</p>
+<ol>
+<li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/RegoleNomiFile_UNIX.pdf"><font color="#0000ff">Regole sui nomi dei file/directory in UNIX/LINUX</font></a>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/controll.pdf"><font color="#0000ff">Slide sui tipici controlli che si devono effettuare all'interno di un file comandi</font></a>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/shellSlides.pdf"><font color="#0000ff">Slide di ripasso sui principali costrutti del Bourne Shell</font></a>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/ripassoC.pdf"><font color="#0000ff">Slide di ripasso di alcune caratteristiche del linguaggio C</font></a>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/SINTASSI_CeSchemaSoluzioni.pdf"><font color="#0000ff">Documento
+ dove sono indicate le sintassi NON accettate del Linguaggio C e il tipo
+ schema da utilizzare nelle soluzione delle parti C degli esami!</font></a>
+</li></ol>
+<p>Vecchio materiale:
+</p>
+<ol>
+<li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/BourneShellManual-Version7.html"><font color="#0000ff"> Manuale Bourne Shell (in inglese)</font></a>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/Unix_BourneShell.html"><font color="#0000ff"> Introduzione alla Bourne Shell (in inglese)</font></a>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/SINTASSI_Del_BOURNESHELL.pdf"><font color="#0000ff">Documento dove sono indicate le sintassi alternative e quelle NON accettate dal <b>Bourne Shell</b> rispetto alla BASH e altre informazioni utili (data aggiornamento documento 22/3/2019 ore 15,25)!</font></a>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/Make.pdf"><font color="#0000ff">Slide sulla utility make</font></a> (a cura di Giulio Salierno, modificato il 15/05/2018)
+<br>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/presentazioneUbuntu.pdf"><font color="#0000ff">Istruzioni su istallazione Ubuntu</font></a>
+<br>
+</li><li>
+<a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/unixsh.pdf"><font color="#0000ff">Slide su UNIX e il Bourne Shell (con password di lettura)</font></a> validi fino all'A.A. 2016-17
+</li></ol>
+<h1><span class="mw-headline" id="Esempi_Interattivi">Esempi Interattivi</span></h1>
+<div class="floatright"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/File:EserciziLezione.png" class="image"><img alt="EserciziLezione.png" src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/EserciziLezione.png" width="128" height="128"></a></div>
+<p><b>Nota bene:</b> nelle prove riportate nei vari documenti 
+sottostanti le indicazioni delle directory da utilizzare sono commenti 
+per il docente e non per lo studente!
+</p>
+<h2><span class="mw-headline" id="Esempi_Interattivi_A.A._2022-23">Esempi Interattivi A.A. 2022-23</span></h2>
+<p>Nei pdf che seguono si troverà, mano a mano che le lezioni procedono,
+ il dettaglio delle sessioni interattive mostrate a lezione: i documenti
+ potrebbero riportare la preparazione delle lezioni e quindi non è detto
+ che rispecchino al 100% le reali sessioni interattive svolte a lezione,
+ ma sono  sicuramente una loro buona approssimazione.In particolare:
+</p>
+<ul><li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_COMANDI_AA2022-23.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) ssi troverà il 
+dettaglio delle sessioni interattive relative alle lezioni di shell 
+(data aggiornamento documento 03/04/2023 ore 16:40)! </li>
+<li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_PRIMITIVE_AA2022-23.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà il 
+dettaglio delle sessioni interattive relative alle lezioni di C (data 
+aggiornamento documento 31/05/2023 ore 13:38)!  </li></ul>
+<h2><span class="mw-headline" id="Esempi_Interattivi_A.A._precedenti">Esempi Interattivi A.A. precedenti</span></h2>
+<ol>
+<li><i>FILE DELL'A.A. 2021-22</i>
+<ul><li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_COMANDI_AA2021-22.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà, mano a 
+mano, che le lezioni di shell procedono (si spera) il dettaglio delle 
+sessioni interattive: il documento potrebbe riportare la preparazione 
+delle lezioni e quindi non è detto che rispecchi al 100% la reale 
+sessione interattiva svolta a lezione, ma è sicuramente una sua buona 
+approssimazione (data aggiornamento documento 30/03/2022 ore 14:17)! </li>
+<li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_PRIMITIVE_AA2021-22.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà, mano a 
+mano, che le lezioni di C procedono (si spera) il dettaglio delle 
+sessioni interattive: il documento potrebbe riportare la preparazione 
+delle lezioni e quindi non è detto che rispecchi al 100% la reale 
+sessione interattiva svolta a lezione, ma è sicuramente una sua buona 
+approssimazione (data aggiornamento documento 01/06/2022 ore 12:20)! </li></ul>
+</li><li><i>FILE DELL'A.A. 2020-21</i>
+<ul><li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_COMANDI_AA2020-21.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà, mano a 
+mano, che le lezioni di shell procedono (si spera) il dettaglio delle 
+sessioni interattive: il documento potrebbe riportare la preparazione 
+delle lezioni e quindi non è detto che rispecchi al 100% la reale 
+sessione interattiva svolta a lezione, ma è sicuramente una sua buona 
+approssimazione (data aggiornamento documento 12/04/2021 ore 19:00)! </li>
+<li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_PRIMITIVE_AA2020-21.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà, mano a 
+mano, che le lezioni di C procedono (si spera) il dettaglio delle 
+sessioni interattive: il documento potrebbe riportare la preparazione 
+delle lezioni e quindi non è detto che rispecchi al 100% la reale 
+sessione interattiva svolta a lezione, ma è sicuramente una sua buona 
+approssimazione (data aggiornamento documento 31/05/2021 ore 18:31)!</li></ul>
+
+</li><li><i>FILE DELL'A.A. 2019-20</i>
+<ul><li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_COMANDI_AA2019-20.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà, mano a 
+mano, che le lezioni di shell procedono (si spera) il dettaglio delle 
+sessioni interattive: il documento riporta la preparazione delle lezioni
+ e quindi non è detto che rispecchi al 100% la reale sessione 
+interattiva svolta a lezione, ma è sicuramente una sua buona 
+approssimazione (data aggiornamento documento 04/04/2020 ore 14:30)! 
+NOTA BENE: nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/SINTASSI_Del_BOURNESHELL.pdf">documento</a> sono indicate le sintassi alternative e quelle NON accettate dal <b>Bourne Shell</b> rispetto alla BASH e altre informazioni utili (data aggiornamento documento 22/3/2019 ore 15,25)!.</li>
+<li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_PRIMITIVE_AA2019-20.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà, mano a 
+mano, che le lezioni di C procedono (si spera) il dettaglio delle 
+sessioni interattive: il documento riporta la preparazione delle lezioni
+ e quindi non è detto che rispecchi al 100% la reale sessione 
+interattiva svolta a lezione, ma è sicuramente una sua buona 
+approssimazione (data aggiornamento documento 28/05/2020 ore 18:10)! Nel
+ <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/SchemiDiComunicazione-bis.mp4">video</a>
+ (caricato il 16/01/2021) si può trovare illustrato un ulteriore schema 
+di comunicazione (non presentato a lezione/esercitazione) che può essere
+ presente nei testi di esame.</li></ul>
+</li><li><i>FILE DELL'A.A. 2018-19</i>
+<ul><li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_COMANDI_AA2018-19.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà, mano a 
+mano, che le lezioni di shell procedono (si spera) il dettaglio delle 
+sessioni interattive: il documento riporta la preparazione delle lezioni
+ e quindi non è detto che rispecchi al 100% la reale sessione 
+interattiva svolta a lezione, ma è sicuramente una sua buona 
+approssimazione (data aggiornamento documento 28/03/2019 ore 12:15)! </li>
+<li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_PRIMITIVE_AA2018-19.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà, mano a 
+mano, che le lezioni di C procedono (si spera) il dettaglio delle 
+sessioni interattive: il documento riporta la preparazione delle lezioni
+ e quindi non è detto che rispecchi al 100% la reale sessione 
+interattiva svolta a lezione, ma è sicuramente una sua buona 
+approssimazione (data aggiornamento documento 30/05/2019 ore 15:00)!</li></ul>
+</li><li><i>FILE DELL'A.A. 2017-18</i>
+<ul><li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_COMANDI_AA2017-18.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà, mano a 
+mano, che le lezioni di shell procedono (si spera) il dettaglio delle 
+sessioni interattive: il documento riporta la preparazione delle lezioni
+ e quindi non è detto che rispecchi al 100% la reale sessione 
+interattiva svolta a lezione, ma è sicuramente una sua buona 
+approssimazione (data aggiornamento documento 21/03/2018 ore 15:40)! </li>
+<li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_PRIMITIVE_AA2017-18.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà, mano a 
+mano, che le lezioni di C procedono (si spera) il dettaglio delle 
+sessioni interattive: il documento riporta la preparazione delle lezioni
+ e quindi non è detto che rispecchi al 100% la reale sessione 
+interattiva svolta a lezione, ma è sicuramente una sua buona 
+approssimazione (data aggiornamento documento 06/06/2018 ore 14:50)! </li></ul>
+</li><li><i>FILE DELL'A.A. 2016-17</i>
+<ul><li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_COMANDI_AA2016-17.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà, mano a 
+mano, che le lezioni di shell procedono (si spera) il dettaglio delle 
+sessioni interattive: il documento riporta la preparazione delle lezioni
+ e quindi non è detto che rispecchi al 100% la reale sessione 
+interattiva svolta a lezione, ma è sicuramente una sua buona 
+approssimazione (data aggiornamento documento 29/3/2017 ore 18,30)!</li>
+<li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_PRIMITIVE_AA2016-17.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si troverà, mano a 
+mano, che le lezioni di C procedono (si spera) il dettaglio delle 
+sessioni interattive: il documento riporta la preparazione delle lezioni
+ e quindi non è detto che rispecchi al 100% la reale sessione 
+interattiva svolta a lezione, ma è sicuramente una sua buona 
+approssimazione (data aggiornamento documento 22/5/2017 ore 15,00).</li></ul>
+</li><li><i>FILE DELL'A.A. 2015-16</i>
+<ul><li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_COMANDI_AA2015-16.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si trova il 
+dettaglio delle sessioni interattive: il documento riporta la 
+preparazione delle lezioni e quindi non è detto che rispecchi al 100% la
+ reale sessione interattiva svolta a lezione, ma è sicuramente una sua 
+buona approssimazione (data aggiornamento documento 27/3/2016 ore 
+14,20)!</li>
+<li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/PROVE_PRIMITIVE_AA2015-16.pdf">documento</a>
+ (protetto sempre dalla stessa password delle slide) si trova il 
+dettaglio delle sessioni interattive: il documento riporta la 
+preparazione delle lezioni e quindi non è detto che rispecchi al 100% la
+ reale sessione interattiva svolta a lezione, ma è sicuramente una sua 
+buona approssimazione (data aggiornamento documento 17/5/2016 ore 
+11,00).</li></ul>
+</li></ol>
+<p><b>NOVITA' dall'A.A. 2016-17</b>: 
+</p>
+<ul><li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/EsempiIfNelleSoluzioni(aggiornatoAl22-03-2017).pdf">documento</a> sono indicati in modo sintetico tutti gli esempi del costrutto <b>if</b> che possono essere trovati nelle soluzioni dei compiti svolti; si rimanda al file indicato per i dettagli.</li>
+<li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/EsempiCaseNelleSoluzioni(aggiornatoAl22-03-2017).pdf">documento</a> sono indicati in modo sintetico tutti gli esempi del costrutto <b>case</b> che possono essere trovati nelle soluzioni dei compiti svolti; si rimanda al file indicato per i dettagli.</li>
+<li> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/EsempiExpr-Shift-Read-GrepNelleSoluzioni(aggiornatoAl22-03-2017).pdf">documento</a> sono indicati in modo sintetico tutti gli esempi dei comandi <b>expr</b>, <b>shift</b>, <b>read</b> e <b>grep</b> che possono essere trovati nelle soluzioni dei compiti svolti; si rimanda al file indicato per i dettagli.</li></ul>
+<h1><span class="mw-headline" id="Small_sh">Small sh</span></h1>
+<p>Un 'embrione' di una shell che si ispira alla Bourne Shell può essere ottenuto dai seguenti file:
+</p>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/smallsh/smallsh.h">file header</a></li>
+<li> <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/smallsh/smallsh.c">file C</a></li></ul>
+<h1><span class="mw-headline" id="Laboratorio">Laboratorio</span></h1>
+<p><b>MATERIALE GENERALE</b>
+</p><p>La video-registrazione della "Guida all'installazione ambiente di
+ lavoro: Ubuntu 16.04 32bit su VirtualBox (a cura di Stefano 
+Allegretti)" si trova su Moodle alla <a rel="nofollow" class="external text" href="https://moodle.unimore.it/mod/url/view.php?id=32622">URL</a>.
+Inoltre sono disponibili le <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/Virtualizzazione.pdf"><font color="#0000ff">Slide con istruzioni su istallazione macchina virtuale con Ubuntu</font></a>.
+<br>
+</p><p>Per una guida sintetica all'uso delle macchine virtuali del Laboratorio Virtuale (LV) si veda il <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/laboratori_virtuali_21-22.pdf">documento</a> (a cura di Silvia Cascianelli, con la solita password).
+</p><p>La video-registrazione su "Editor di testo: vi, vim, vimtutor" si trova sempre su Moodle alla <a rel="nofollow" class="external text" href="https://moodle.unimore.it/mod/url/view.php?id=32623">URL</a>.
+Inoltre sono disponibili le <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/vi.pdf"><font color="#0000ff">Slide sull'editor vi di UNIX (con password di lettura) - versione del 5/03/2020 ore 14,45</font></a> 
+<b>NOTA BENE</b>: se si vogliono disattivare i colori mostrati 
+dall'editor vim si può usare il comando&nbsp;:syntax off (dopo avere 
+usato il tasto escape).
+</p><p>Le due video-registrazioni su "Compilazione/linking di un progetto C (a cura di Stefano Allegretti)" si trovano su Moodle alla <a rel="nofollow" class="external text" href="https://moodle.unimore.it/course/view.php?id=4618#section-5">sezione</a>.
+Inoltre sono disponibili le <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Lucidi/Make.pdf"><font color="#0000ff">Slide sulla utility make</font></a> (presentate da Silvia Cascianelli il 20/04/2023).<br>
+</p>
+<h2><span class="mw-headline" id="Laboratorio_A.A._2022-23">Laboratorio A.A. 2022-23</span></h2>
+<p>Il laboratorio che verrà utilizzato per le esercitazioni è il laboratorio <b>LINFA</b>
+ (ex aula FA-2F, al secondo piano dell'ala nuova delle aule del 
+Dipartimento di Ingegneria) nella sua forma allargata che comprende 
+l'aula a fianco: chiaramente, gli studenti che staranno nell'aula a 
+fianco dovranno portare il proprio portatile.
+</p><p>Il materiale per le esercitazioni dell'A.A. 2022-23 verrà 
+caricato mano a mano che procederanno le esercitazioni (con la solita 
+password) su Moodle e poi anche qui nel seguito.
+Per quanto riguarda i <b>file</b> con le possibili soluzioni, queste verranno caricate (sempre mano a mano) <a rel="nofollow" class="external text" href="https://github.com/letizialeonardi/SOeLab22-23">qui</a> (in gitHub).
+</p><p><i>ESERCITAZIONI C</i><br>
+</p>
+<ul><li> Per la esercitazione di Giovedì 25 Maggio 2023 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/C/Esercitazione25Maggio2023.pdf">documento</a>.</li>
+<li> Per la esercitazione di Giovedì 18 Maggio 2023 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/C/Esercitazione18Maggio2023.pdf">documento</a>.</li>
+<li> Per la esercitazione di Giovedì 11 Maggio 2023 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/C/Esercitazione11Maggio2023.pdf">documento</a>.</li>
+<li> Per la esercitazione di Giovedì 4 Maggio 2023 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/C/Esercitazione4Maggio2023.pdf">documento</a>.</li>
+<li> Per la esercitazione di Giovedì 27 Aprile 2023 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/C/Esercitazione27Aprile2023.pdf">documento</a>.</li>
+<li> Per la esercitazione di Giovedì 20 Aprile 2023 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/C/Esercitazione20Aprile2023.pdf">documento</a>.</li></ul>
+<p><i>ESERCITAZIONI SHELL</i><br>
+</p>
+<ul><li> Per la esercitazione extra di Mercoledì 5 Aprile 2023 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/SHELL/Esercitazione5Aprile2023(ExtraInAula).pdf">documento</a>. </li>
+<li> Per la esercitazione di Giovedì 30 Marzo 2023 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/SHELL/Esercitazione30Marzo2023.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/SHELL/SoluzioniEsercitazione30Marzo2023.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Giovedì 23 Marzo 2023 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/SHELL/Esercitazione23Marzo2023.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/SHELL/SoluzioniEsercitazione23Marzo2023.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Giovedì 16 Marzo 2023 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/SHELL/Esercitazione16Marzo2023.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/SHELL/SoluzioniEsercitazione16Marzo2023.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Giovedì 9 Marzo 2023 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/SHELL/Esercitazione9Marzo2023.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/Laboratorio/SHELL/SoluzioniEsercitazione9Marzo2023.pdf">documento</a>
+ si trovano le soluzioni. N.B. Ricaricati file domenica 12/03/2023 
+perchè c'era un errore nella numerazione degli esercizi che è stato 
+corretto!</li></ul>
+<h2><span class="mw-headline" id="Laboratorio_A.A._precedenti">Laboratorio A.A. precedenti</span></h2>
+<p><b>MATERIALE A.A. 2021-22</b>
+</p><p>Il laboratorio che verrà utilizzato per le esercitazioni è il laboratorio <b>LINFA</b>
+ (ex aula FA-2F, al secondo piano dell'ala nuova delle aule del 
+Dipartimento di Ingegneria) nella sua forma allargata che comprende 
+l'aula a fianco: chiaramente, gli studenti che staranno nell'aula a 
+fianco dovranno portare il proprio portatile.
+</p><p>Il materiale per le esercitazioni dell'A.A. 2021-22 verrà 
+caricato mano a mano che procederanno le esercitazioni (con la solita 
+password) su Moodle e poi anche qui nel seguito.
+Per quanto riguarda le possibili soluzioni, queste verranno caricate 
+(sempre mano a mano) <a rel="nofollow" class="external text" href="https://github.com/letizialeonardi/SOeLab21-22">qui</a>
+ (in gitHub) a parte per le prime due esercitazione e per alcune 
+soluzioni della terza esercitazione dove saranno fornite direttamente 
+come PDF.
+</p><p><i>ESERCITAZIONI C</i><br>
+</p>
+<ul><li> Per la esercitazione di Lunedì 30 Maggio 2022 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC30Maggio2022.pdf">documento</a>; le possibili soluzioni sono disponibili a partire dalla <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/EsamiSO">pagina</a> </li>
+<li> Per la esercitazione di Lunedì 23 Maggio 2022 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC23Maggio2022.pdf">documento</a>; le possibili soluzioni sono disponibili a partire dalla <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/EsamiSO">pagina</a> per il primo esercizio e daranno disponibili su gitHub per il secondo.</li>
+<li> Per la esercitazione di Lunedì 16 Maggio 2022 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC16Maggio2022.pdf">documento</a>; le possibili soluzioni sono disponibili a partire dalla <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/EsamiSO">pagina</a>.</li>
+<li> Per la esercitazione di Lunedì 9 Maggio 2022 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC9Maggio2022.pdf">documento</a>; le possibili soluzioni prodotte saranno caricate in gitHub.</li>
+<li> Per la esercitazione di Lunedì 2 Maggio 2022 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC2Maggio2022.pdf">documento</a>; le possibili soluzioni prodotte saranno caricate in gitHub. </li>
+<li> Per la esercitazione proposta a casa (nell'annuncio di Giovedì 21 Aprile 2022) fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/Esercitazione_ACasaAprile2022.pdf">documento</a>; le possibili soluzioni  prodotte saranno caricate in gitHub. </li></ul>
+<p><i>ESERCITAZIONI SHELL</i><br>
+</p>
+<ul><li> Per la esercitazione di Lunedì 4 Aprile 2022 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC4Aprile2022.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%c3%ac4Aprile2022.pdf">documento</a> si trovano i riferimenti alle soluzioni che sono caricati nella pagina dei Testi Esami.</li></ul>
+<ul><li> Per la esercitazione di Lunedì 28 Marzo 2022 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC28Marzo2022.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%c3%ac28Marzo2022.pdf">documento</a> si trovano i riferimenti alle soluzioni che sono caricati nella pagina dei Testi Esami. <b>N.B.
+ Purtroppo mi sono resa conto solo il 30/03/2022 che i concetti per 
+risolvere l'ultimo esercizio sono stati forniti solo con la lezione 
+appunto del 30/03/2022!</b></li></ul>
+<ul><li> Per la esercitazione proposta a casa (nell'annuncio di Venerdì 25 Marzo 2022) fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/Esercitazione_ACasaMarzo2022.pdf">documento</a>; le due possibili soluzioni  prodotte saranno caricate in gitHub.</li></ul>
+<ul><li> Per la esercitazione di Lunedì 21 Marzo 2022 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC21Marzo2022.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%c3%ac21Marzo2022.pdf">documento</a> si trovano parte delle soluzioni.</li></ul>
+<ul><li> Per la esercitazione di Lunedì 14 Marzo 2022 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC14Marzo2022.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%c3%ac14Marzo2022.pdf">documento</a> si trovano le soluzioni.</li></ul>
+<ul><li> Per la esercitazione di Lunedì 7 Marzo 2022 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC7Marzo2022.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazione7Marzo2022.pdf">documento</a> si trovano le soluzioni.</li></ul>
+<p><b>MATERIALE A.A. 2020-21</b>
+</p><p><i><b>IMPORTANTISSIMO (10/03/2021)</b></i>: Stante il perdurare 
+della nota situazione di emergenza dovuta al COVID-2019, le attività di 
+laboratorio saranno sempre svolte in remoto: molto probabilmente verrà 
+utilizzato ZOOM come strumento che consente di suddividere gli studenti 
+in carie 'stanze' virtuali; verrà chiaramente messa una indicazione 
+specifica su Dolly.
+<i><b>IMPORTANTISSIMO (10/03/2020)</b></i>: Stante il perdurare della 
+nota situazione di emergenza dovuta al COVID-2019, si stanno 
+organizzando anche le attività di laboratorio sulla piattaforma Dolly! 
+Si ricorda agli studenti che hanno bisogno di supporto di usare il forum
+ creato allo scopo nella sezione Lezioni con Collaborate della 
+piattaforma Dolly.
+Il laboratorio che verrà utilizzato per le esercitazioni è il 
+laboratorio <b>LINFA</b> (ex aula FA-2F, al secondo piano dell'ala nuova
+ delle aule del Dipartimento di Ingegneria); per l'A.A. 2018-19 per la 
+prima volta verrà usato il laboratorio nella sua forma allargata che 
+comprende anche l'aula a fianco: chiaramente, gli studenti che staranno 
+nell'aula a fianco dovranno portare il proprio portatile. 
+per l'A.A. 2017-18, sono previsti due turni: I) ore 8-11 a cura del 
+Prof. Nicola Bicocchi e II) dalle 11 alle 14 a cura della Prof.ssa 
+Leonardi.
+</p><p>La video-registrazione della "Guida all'installazione ambiente di
+ lavoro: Ubuntu 16.04 32bit su VirtualBox (a cura di Stefano 
+Allegretti)" si trova su DOLLY2020 alla <a rel="nofollow" class="external text" href="https://dolly.ingmo.unimore.it/2020/course/view.php?id=238#section-2">URL</a>.
+</p><p>La video-registrazione su "Editor di testo: vi, vim, vimtutor" si trova sempre su DOLLY2020 alla <a rel="nofollow" class="external text" href="https://dolly.ingmo.unimore.it/2020/course/view.php?id=238#section-2">URL</a>.
+</p><p>Le due video-registrazioni su "Compilazione/linking di un 
+progetto C (a cura di Stefano Allegretti)" si trovano su DOLLY2020 alla <a rel="nofollow" class="external text" href="https://dolly.ingmo.unimore.it/2020/course/view.php?id=238#section-2">URL</a>
+</p><p>Per il materiale delle esercitazioni dell'A.A. 2020-21, gli 
+esercizi e le soluzioni sono recuperabili qui nel seguito (con la solita
+ password):
+</p><p><b>ESERCITAZIONI C</b><br>
+</p>
+<ul><li> Per la esercitazione di Venerdì 4 Giugno 2021 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneVenerd%C3%AC4Giugno2021.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneVenerd%C3%AC4Giugno2021.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Venerdì 28 Maggio 2021 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneVenerd%C3%AC28Maggio2021.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneVenerd%C3%AC28Maggio2021.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Venerdì 21 Maggio 2021 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneVenerd%C3%AC21Maggio2021.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneVenerd%C3%AC21Maggio2021.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Venerdì 14 Maggio 2021 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneVenerd%C3%AC14Maggio2021.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneVenerd%C3%AC14Maggio2021.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Venerdì 7 Maggio 2021 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneVenerd%C3%AC7Maggio2021.pdf">documento</a> (ricaricato alle 11:40); nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneVenerd%C3%AC7Maggio2021.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Venerdì 30 Aprile 2021 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneVenerd%C3%AC30Aprile2021.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneVenerd%C3%AC30Aprile2021.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Venerdì 23 Aprile 2021 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneVenerd%C3%AC23Aprile2021.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneVenerd%C3%AC23Aprile2021.pdf">documento</a> si trovano le soluzioni.</li></ul>
+<p><b>ESERCITAZIONI SHELL</b><br>
+</p>
+<ul><li> Per la esercitazione di Venerdì 16 Aprile 2021 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneVenerd%C3%AC16Aprile2021.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneVenerd%C3%AC16Aprile2021.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Venerdì 9 Aprile 2021 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneVenerd%C3%AC9Aprile2021.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneVenerd%C3%AC9Aprile2021.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per esercitarsi durante le vacanze di Pasqua 2021 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneVacanzeDiPasqua2021.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneVacanzeDiPasqua2021.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Venerdì 26 Marzo 2021 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneVenerd%C3%AC26Marzo2021.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneVenerd%C3%AC26Marzo2021.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Venerdì 19 Marzo 2021 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneVenerd%C3%AC19Marzo2021.pdf">documento</a>; nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneVenerd%C3%AC19Marzo2021.pdf">documento</a> si trovano le soluzioni.</li></ul>
+<hr>
+<p><b>MATERIALE A.A. 2019-20</b>
+</p><p><b>CREAZIONE GERARCHIE DI PROVA (10/04/2020)</b>: Grazie ad un 
+vostro collega, Marco Michelini, ai seguenti link sono scaricabili un 
+file principale e un file ricorsivo, oltre ad un file di spiegazioni, 
+per creare delle gerarchie di prova (le versioni che trovate qui sono 
+state da me leggermente modificate rispetto alla versione originale):<br>
+- <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/MarcoMichelini/createhierarchy.sh">file principale</a><br>
+- <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/MarcoMichelini/createhierarchy-support.sh">file ricorsivo</a><br>
+- <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/MarcoMichelini/read.me">spiegazioni</a><br>
+</p><p>Per il materiale delle esercitazioni dell'A.A. 2019-20, gli 
+esercizi e le soluzioni sono recuperabili qui nel seguito (con la solita
+ password):
+</p><p><b>ESERCITAZIONI C</b><br>
+</p>
+<ul><li> Per la esercitazione di Lunedì 25 Maggio 2020 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC25Maggio2020.pdf">documento</a> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%C3%AC25Maggio2020.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Lunedì 18 Maggio 2020 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC18Maggio2020.pdf">documento</a> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%C3%AC18Maggio2020.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Lunedì 11 Maggio 2020 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC11Maggio2020.pdf">documento</a> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%C3%AC11Maggio2020.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Lunedì 4 Maggio 2020 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC4Maggio2020.pdf">documento</a> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%C3%AC4Maggio2020.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Lunedì 27 Aprile 2020 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC27Aprile2020.pdf">documento</a> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%C3%AC27Aprile2020.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Lunedì 20 Aprile 2020 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC20Aprile2020.pdf">documento</a> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%C3%AC20Aprile2020.pdf">documento</a> si trovano le soluzioni.</li></ul>
+<p><b>ESERCITAZIONI SHELL</b><br>
+</p>
+<ul><li> Per la esercitazione di Lunedì 6 Aprile 2020 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC6Aprile2020.pdf">documento</a> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%C3%AC6Aprile2020.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Lunedì 30 Marzo 2020 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC30Marzo2020.pdf">documento</a> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%C3%AC30Marzo2020.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Lunedì 23 Marzo 2020 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC23Marzo2020.pdf">documento</a> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%C3%AC23Marzo2020.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Lunedì 16 Marzo 2020 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC16Marzo2020.pdf">documento</a> nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%C3%AC16Marzo2020.pdf">documento</a> si trovano le soluzioni.</li>
+<li> Per la esercitazione di Lunedì 9 Marzo 2020 fare riferimento agli esercizi specificati nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/EsercitazioneLuned%C3%AC9Marzo2020.pdf">documento</a>: nel <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/SOeLab/SessioniInterattive/Laboratorio/SoluzioniEsercitazioneLuned%C3%AC9Marzo2020.pdf">documento</a> si trovano le soluzioni.</li></ul>
+<p><br>
+</p>
+<hr>
+<p><b>OSSERVAZIONI:</b>
+</p>
+<ol>
+<li>Nel caso si producano file Windows che si vogliono poi usare in UNIX
+ si puo' usare il comando dos2unix se disponibile, altrimenti il comando
+ `tr -d \\r &lt; nomefiledos &gt; nomefileunix`.
+</li><li>Nel caso si abbiano dei problemi di ordinamento con il comando 
+sort o dei problemi con l'espansione tipo [a-z]* utilizzare i seguenti 
+due comandi: LC_ALL=C; export LC_ALL o anche solo: LC_COLLATE=C; export 
+LC_COLLATE 
+</li></ol>
+<h1><span class="mw-headline" id="Elaborati_svolti">Elaborati svolti</span></h1>
+<p>Qui nel seguito si trova un elenco (molto) parziale degli elaborati realizzati
+negli ultimi anni presso il <b>Dipartimento di Ingegneria "Enzo Ferrari" (DIEF)</b>,
+ relativi all'insegnamento di Sistemi Operativi e Lab. del Corso di 
+Laurea di Ingegneria Informatica (D.M. 270/04): 
+gli elaborati sono elencati in ordine cronologico inverso. L'elenco di 
+tutti gli elaborati presentati dai laureandi triennali di Ingegneria 
+Informatica si trova <a rel="nofollow" class="external text" href="http://didattica.agentgroup.unimore.it/didattica/cdl/LT/TitoliElaboratiTriennaleIngegneriaInformatica.pdf">qui</a>.
+</p><p><b>ELABORATI DI LAUREA DISCUSSI NELL'A.A. 2022-2023</b>
+</p>
+<pre> * Imad Ayoub (prova finale del 9/10/2023): 
+   "<i>SCHEDULING IN LINUX: DALLE ORIGINI AL COMPLETELY FAIR SCHEDULER</i>"
+   <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/TesiSOeLab/ImadAyoub/Elaborato_Imad_Scheduler.pdf">Elaborato Completo (PDF)</a>.
+</pre>
+<p><b>ELABORATI DI LAUREA DISCUSSI NELL'A.A. 2021-2022</b>
+</p>
+<pre> * Pallante Laura (prova finale del 6/10/2022): 
+   "<i>SHELL DEI SISTEMI UNIX</i>"
+   <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/TesiSOeLab/PallanteLaura/Elaborato_Shell_UNIX.pdf">Elaborato Completo (PDF)</a>.
+</pre>
+<p><b>ELABORATI DI LAUREA DISCUSSI NELL'A.A. 2018-2019</b>
+</p>
+<pre> * Bruno Paolo (prova finale del 16/10/2019): 
+   "<i>IL PROCESSO DI INIT E LA SUA EVOLUZIONE NEI SISTEMI OPERATIVI GNU/LINUX</i>"
+   <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/TesiSOeLab/BrunoPaolo/InitESueEvoluzioni.pdf">Elaborato Completo (PDF)</a>.
+</pre>
+<p><b>ELABORATI DI LAUREA DISCUSSI NELL'A.A. 2012-2013</b>
+</p>
+<pre> * Cristallo Alberto (prova finale del 10/07/2013): 
+   "<i>LINUX: ANALISI DELL'EVOLUZIONE DELLO SCHEDULER</i>"
+   <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/TesiSOeLab/CristalloAlberto/Scheduler_Linux_Cristallo.pdf">Elaborato Completo (PDF)</a>.
+</pre>
+<p><b>ELABORATI DI LAUREA DISCUSSI NELL'A.A. 2011-2012</b>
+</p>
+<pre> * Sentimenti Marco (prova finale del 29/10/2012): 
+   "<i>UNIX FUNCTION HELPER: SUPPORTO ALL'APPRENDIMENTO DELLE PRIMITIVE UNIX</i>"
+   <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/TesiSOeLab/SentimentiMarco/ElaboratoUnixFunctionHelper.pdf">Elaborato Completo (PDF)</a> Il codice cui fa riferimento tale elaborato è scaricabile <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/TesiSOeLab/SentimentiMarco/UnixFunctionHelper.jar">qui (file JAR)</a>.
+</pre>
+<h1><span class="mw-headline" id="Strumenti_Software">Strumenti Software</span></h1>
+<div class="floatright"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/File:Strumenti.png" class="image"><img alt="Strumenti.png" src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/Strumenti.png" width="122" height="112"></a></div>
+<p>Si indicano di seguito gli strumenti software che si utilizzano durante il corso e si indica dove è possibile reperirli.
+</p>
+<ul><li> La Heirloom Bourne Shell cioè una versione abbastanza simile alla Bourne Shell può essere scaricata dal <a rel="nofollow" class="external text" href="http://heirloom.sourceforge.net/sh.html">sito</a>. Sempre della Heirloom si trova il manuale per la Bourne Shell: <a rel="nofollow" class="external text" href="http://heirloom.sourceforge.net/sh/sh.1.html">qui</a>. </li></ul>
+<ul><li> Varie cose sull'editor vi di UNIX. Questo <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/vi/">link</a> porta ad una pagina che contiene varie cose sull'editor vi di UNIX.</li></ul>
+<ul><li> Client SSH per Windows. Per collegarsi ad un server SSH da Windows, è possibile usare il programma putty, scaricando il file <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/ssh/putty.exe">putty.exe</a>, oppure installando il programma <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/ssh/SSHSecureShellClient-3.2.2.exe">SSHSecureShellClient-3.2.2.exe</a>. È necessario impostare come protocollo SSH e indicare un host a cui collegarsi.</li></ul>
+<ul><li> Ambiente UNIX per Windows. Il progetto <a rel="nofollow" class="external text" href="http://www.cygwin.com/">Cygwin</a>
+ ha come obiettivo la realizzazione di un ambiente UNIX che esegua sotto
+ Windows, traducendo le system call di UNIX in chiamate alle API di 
+Windows. Tramite diversi programmi di setup è possibile scaricare e 
+installare i programmi Cygwin. </li></ul>
+<ul><li> Storia di UNIX. Se interessati si può scaricare un <a rel="nofollow" class="external text" href="https://www.levenez.com/unix/unix_a4.pdf">diagramma</a> (varie pagine in formato A4-PDF) che mostra la storia del Sistema Operativo Unix (per dettagli si veda la <a rel="nofollow" class="external text" href="http://www.levenez.com/">pagina</a>).</li></ul>
+<ul><li> Storia di Windows. Se interessati si può scaricare un <a rel="nofollow" class="external text" href="http://{https//www.levenez.com/windows/windows_a4.pdf">diagramma</a> (varie pagine in formato a A4-PDF) che mostra la storia del Sistema Operativo Windows (per dettagli si veda la <a rel="nofollow" class="external text" href="http://www.levenez.com/">pagina</a>).</li></ul>
+<ul><li> Storia dei Linguaggi di programmazione. Se interessati si può scaricare un <a rel="nofollow" class="external text" href="https://www.levenez.com/lang/lang_a4.pdf">diagramma</a> (varie pagine in formato a A4-PDF) che mostra la storia dei Linguaggi di Programmazione (per dettagli si veda la <a rel="nofollow" class="external text" href="http://www.levenez.com/">pagina</a>).</li></ul>
+<ul><li> Tabella codici ASCII. In questa <a rel="nofollow" class="external text" href="http://www.didattica.agentgroup.unimo.it/didattica/strumenti/ascii.html">pagina</a> si trova la tabella dei codici ASCII.</li></ul>
+<ul><li> Generazione codici ASCII speciali. In questa <a rel="nofollow" class="external text" href="http://whatis.techtarget.com/definition/0,,sid9_gci847800,00.html">pagina</a> si trova come generare i simboli ASCII speciali.</li></ul>
+<ul><li> Estensioni dei file. In questa <a rel="nofollow" class="external text" href="http://filext.com/">pagina</a> si trova una lista delle estensioni più comuni dei file che indicano il formato o l'uso del file.<p></p></li></ul>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.031 seconds
+Real time usage: 0.045 seconds
+Preprocessor visited node count: 585/1000000
+Preprocessor generated node count: 0/1000000
+Post‐expand include size: 2046/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 2/40
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key wikidb:pcache:idhash:535-0!*!0!!en!5!* and timestamp 20231218104941 and revision id 12502
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://www.didattica.agentgroup.unimo.it/wiki/index.php?title=Sistemi_Operativi_e_Lab.&amp;oldid=12502">https://www.didattica.agentgroup.unimo.it/wiki/index.php?title=Sistemi_Operativi_e_Lab.&amp;oldid=12502</a>"</div>
+						<div class="mw_clear"></div>
+						<div id="catlinks" class="catlinks catlinks-allhidden"></div>											</div><!-- mw_contentholder -->
+				</div><!-- mw_content -->
+			</div><!-- mw_contentwrapper -->
+
+			<div id="mw_portlets">
+				<h2>Navigation menu</h2>
+
+				<!-- portlets -->
+					<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class="pBody">
+							<ul>
+											<li id="n-mainpage"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Main_Page" title="Visit the main page [Alt+Maiusc+z]" accesskey="z">Main Page</a></li>
+											<li id="n-AgentGroup-papers"><a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php?title=Special:Bibliography&amp;view=&amp;f=agpapers.bib" rel="nofollow">AgentGroup papers</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Links_to_local_Institutions" role="navigation">
+		<h3>Links to local Institutions</h3>
+		<div class="pBody">
+							<ul>
+											<li id="n-Universit.C3.A0-di-Modena-e-Reggio-Emilia"><a href="http://www.unimore.it/" rel="nofollow">Università di Modena e Reggio Emilia</a></li>
+											<li id="n-Dipartimento-di-Ingegneria-Enzo-Ferrari"><a href="http://www.dief.unimore.it/" rel="nofollow">Dipartimento di Ingegneria Enzo Ferrari</a></li>
+											<li id="n-Dipartimento-di-Scienze-e-Metodi-dell.27Informazione"><a href="http://www.dismi.unimore.it/" rel="nofollow">Dipartimento di Scienze e Metodi dell'Informazione</a></li>
+											<li id="n-Dipartimento-di-Scienze-Fisiche.2C-Informatiche-e-Matematiche"><a href="http://www.fim.unimore.it/" rel="nofollow">Dipartimento di Scienze Fisiche, Informatiche e Matematiche</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Teaching_staff" role="navigation">
+		<h3>Teaching staff</h3>
+		<div class="pBody">
+							<ul>
+											<li id="n-Letizia-Leonardi"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Letizia">Letizia Leonardi</a></li>
+											<li id="n-Franco-Zambonelli"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Franco">Franco Zambonelli</a></li>
+											<li id="n-Giacomo-Cabri"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Giacomo_Cabri">Giacomo Cabri</a></li>
+											<li id="n-Marco-Mamei"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Marco">Marco Mamei</a></li>
+											<li id="n-Mariachiara-Puviani"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Mariachiara">Mariachiara Puviani</a></li>
+											<li id="n-Nicola-Bicocchi"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Nicola">Nicola Bicocchi</a></li>
+											<li id="n-Nicola-Capodieci"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Nicola_Capodieci">Nicola Capodieci</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Research_staff" role="navigation">
+		<h3>Research staff</h3>
+		<div class="pBody">
+							<ul>
+											<li id="n-Emanuel-Federico-Alsina"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Emanuel_Federico_Alsina">Emanuel Federico Alsina</a></li>
+											<li id="n-Alket-Cecaj"><a href="http://personale.unimore.it/rubrica/dettaglio/46780" rel="nofollow">Alket Cecaj</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-External_and_past_collaborators" role="navigation">
+		<h3>External and past collaborators</h3>
+		<div class="pBody">
+							<ul>
+											<li id="n-Elton-Domnori"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Elton_Domnori">Elton Domnori</a></li>
+											<li id="n-Raffaele-Quitadamo"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Raffaele">Raffaele Quitadamo</a></li>
+											<li id="n-Maciej-Gawinecki"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Maciej_Gawinecki">Maciej Gawinecki</a></li>
+											<li id="n-Francesco-De-Mola"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Francesco_De_Mola">Francesco De Mola</a></li>
+											<li id="n-Danilo-Ansaloni"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Hanza">Danilo Ansaloni</a></li>
+											<li id="n-Cynthia-Villalba"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Cynthia_Emilia_Villalba_Cardozo">Cynthia Villalba</a></li>
+											<li id="n-Gabriella-Castelli"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Gabriella">Gabriella Castelli</a></li>
+											<li id="n-Alberto-Rosi"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Alberto_Rosi">Alberto Rosi</a></li>
+											<li id="n-Alessandro-Valenti"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/User:Alessandro_Valenti">Alessandro Valenti</a></li>
+											<li id="n-Damiano-Fontana"><a href="http://personale.unimore.it/rubrica/dettaglio/171561" rel="nofollow">Damiano Fontana</a></li>
+											<li id="n-Andrea-Sassi"><a href="http://personale.unimore.it/rubrica/dettaglio/61649" rel="nofollow">Andrea Sassi</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Insegnamenti" role="navigation">
+		<h3>Insegnamenti</h3>
+		<div class="pBody">
+							<ul>
+											<li id="n-Sistemi-Operativi-e-Lab."><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.">Sistemi Operativi e Lab.</a></li>
+											<li id="n-Progettazione-di-Sistemi-Operativi---LM"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Progettazione_di_Sistemi_Operativi_-_LM">Progettazione di Sistemi Operativi - LM</a></li>
+											<li id="n-Laboratorio-di-Ingegneria-Informatica"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Laboratorio_di_Ingegneria_Informatica">Laboratorio di Ingegneria Informatica</a></li>
+											<li id="n-Programmazione-ad-Oggetti"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Programmazione_ad_Oggetti">Programmazione ad Oggetti</a></li>
+											<li id="n-Sistemi-Software-Distribuiti"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Software_Distribuiti">Sistemi Software Distribuiti</a></li>
+											<li id="n-Paradigmi-e-Linguaggi-di-Programmazione"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Paradigmi_e_Linguaggi_di_Programmazione">Paradigmi e Linguaggi di Programmazione</a></li>
+											<li id="n-Metodologie-e-Architetture-Software"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Metodologie_e_Architetture_Software">Metodologie e Architetture Software</a></li>
+											<li id="n-Progetto-del-Software"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Progetto_del_Software">Progetto del Software</a></li>
+											<li id="n-Programmazione-distribuita-e-mobile"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Programmazione_distribuita_e_mobile">Programmazione distribuita e mobile</a></li>
+											<li id="n-Tesi-disponibili"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Tesi_Giacomo_Cabri">Tesi disponibili</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Insegnamenti_non_pi.C3.B9_attivi" role="navigation">
+		<h3>Insegnamenti non più attivi</h3>
+		<div class="pBody">
+							<ul>
+											<li id="n-Linguaggi-Dinamici"><a href="http://www.didattica.agentgroup.unimo.it/didattica/ld/" rel="nofollow">Linguaggi Dinamici</a></li>
+											<li id="n-Sistemi-Operativi"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi">Sistemi Operativi</a></li>
+											<li id="n-Elementi-di-Informatica"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Elementi_di_Informatica">Elementi di Informatica</a></li>
+											<li id="n-Principi-di-Sistemi-Operativi---LM"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Principi_di_Sistemi_Operativi_-_LM">Principi di Sistemi Operativi - LM</a></li>
+											<li id="n-Principi-di-Sistemi-Operativi-.28LS.29"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Principi_di_Sistemi_Operativi">Principi di Sistemi Operativi (LS)</a></li>
+											<li id="n-Fondamenti-di-Informatica-C-.28AA-2008.2F09.29"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Fondamenti_di_Informatica_C_(AA_2008/09)">Fondamenti di Informatica C (AA 2008/09)</a></li>
+											<li id="n-Fondamenti-di-Informatica-C-.28fino-all.27AA-2007.2F08.29"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Fondamenti_di_Informatica_C_(fino_all%27AA_2007/08)">Fondamenti di Informatica C (fino all'AA 2007/08)</a></li>
+											<li id="n-Fondamenti-di-Informatica-C-IEI-.28AA-2009.2F10.29"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Fondamenti_di_Informatica_C_IEI_(AA_2009/10)">Fondamenti di Informatica C IEI (AA 2009/10)</a></li>
+											<li id="n-Fondamenti-di-Informatica-A-IEI"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Fondamenti_di_Informatica_A_IEI">Fondamenti di Informatica A IEI</a></li>
+											<li id="n-Sistemi-Distribuiti"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Distribuiti">Sistemi Distribuiti</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Pagine_riservate_ai_CdS_di_Ing._Informatica" role="navigation">
+		<h3>Pagine riservate ai CdS di Ing. Informatica</h3>
+		<div class="pBody">
+							<ul>
+											<li id="n-News"><a href="http://www.didattica.agentgroup.unimore.it/didattica/cdl/news/allNews.html" rel="nofollow">News</a></li>
+											<li id="n-Valutazione-Didattica"><a href="http://www.didattica.agentgroup.unimore.it/didattica/cdl/Valutazione/" rel="nofollow">Valutazione Didattica</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Utilities" role="navigation">
+		<h3>Utilities</h3>
+		<div class="pBody">
+							<ul>
+											<li id="n-Dotazione-hardware-AgentGroup"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Dotazione_hardware_AgentGroup">Dotazione hardware AgentGroup</a></li>
+											<li id="n-Formatting-Wiki"><a href="http://www.mediawiki.org/wiki/Help:Formatting">Formatting Wiki</a></li>
+											<li id="n-Edit-Sidebar"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/MediaWiki:Sidebar">Edit Sidebar</a></li>
+									</ul>
+					</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-Intranet" role="navigation">
+		<h3>Intranet</h3>
+		<div class="pBody">
+							<ul>
+											<li id="n-Gestione-esami"><a href="http://www.didattica.agentgroup.unimo.it/gestesami/login/index.php" rel="nofollow">Gestione esami</a></li>
+											<li id="n-Gestione-registri"><a href="http://www.didattica.agentgroup.unimo.it/registri/login.php" rel="nofollow">Gestione registri</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="/wiki/index.php" id="searchform">
+					<input type="hidden" name="title" value="Special:Search">
+					<input type="search" name="search" placeholder="Search" title="Search Agentgroup [Alt+Maiusc+f]" accesskey="f" id="searchInput" autocomplete="off">
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton">&nbsp;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton">
+				</form>
+
+							</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Special:WhatLinksHere/Sistemi_Operativi_e_Lab." title="A list of all wiki pages that link here [Alt+Maiusc+j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Special:RecentChangesLinked/Sistemi_Operativi_e_Lab." title="Recent changes in pages linked from this page [Alt+Maiusc+k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Special:SpecialPages" title="A list of all special pages [Alt+Maiusc+q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php?title=Sistemi_Operativi_e_Lab.&amp;printable=yes" rel="alternate" title="Printable version of this page [Alt+Maiusc+p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php?title=Sistemi_Operativi_e_Lab.&amp;oldid=12502" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php?title=Sistemi_Operativi_e_Lab.&amp;action=info">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+	
+			</div><!-- mw_portlets -->
+
+
+		</div><!-- main -->
+
+		<div class="mw_clear"></div>
+
+		<!-- personal portlet -->
+		<div class="portlet" id="p-personal" role="navigation">
+			<h3>Personal tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="pt-login"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php?title=Special:UserLogin&amp;returnto=Sistemi+Operativi+e+Lab." title="You are encouraged to log in; however, it is not mandatory [Alt+Maiusc+o]" accesskey="o">Log in</a></li>
+									</ul>
+			</div>
+		</div>
+
+
+		<!-- footer -->
+		<div id="footer" role="contentinfo">
+			<ul id="f-list">
+										<li id="lastmod"> This page was last modified on 18 December 2023, at 11:49.</li>
+											<li id="viewcount">This page has been accessed 2,567,028 times.</li>
+											<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
+											<li id="privacy"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Agentgroup:Privacy_policy" title="Agentgroup:Privacy policy">Privacy policy</a></li>
+											<li id="about"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Agentgroup:About" title="Agentgroup:About">About Agentgroup</a></li>
+											<li id="disclaimer"><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Agentgroup:General_disclaimer" title="Agentgroup:General disclaimer">Disclaimers</a></li>
+								</ul>
+							<div id="mw_poweredby">
+											<a href="https://www.mediawiki.org/">Powered by MediaWiki</a>
+									</div>
+					</div>
+
+		<script>/*<![CDATA[*/window.jQuery && jQuery.ready();/*]]>*/</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"],null,true);
+}</script>
+<script>if(window.mw){
+document.write("\u003Cscript src=\"https://www.didattica.agentgroup.unimo.it/wiki/load.php?debug=false\u0026amp;lang=en\u0026amp;modules=site\u0026amp;only=scripts\u0026amp;skin=modern\u0026amp;*\"\u003E\u003C/script\u003E");
+}</script><script src="Sistemi%20Operativi%20e%20Lab.%20-%20Agentgroup_files/load_003.php"></script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":60});
+}</script>
+	
+
+		<div style="display: none; font-size: 13.3333px;" class="suggestions"><div class="suggestions-results"></div><div class="suggestions-special"></div></div></body><app-content ng-version="16.0.0"></app-content></html>
