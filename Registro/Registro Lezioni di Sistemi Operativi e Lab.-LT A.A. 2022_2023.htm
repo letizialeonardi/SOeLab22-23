@@ -1,0 +1,1655 @@
+<html><head>
+    <title>Registro Lezioni di Sistemi Operativi e Lab.-LT A.A. 2022/2023    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="MSHTML 6.00.2800.1226" name="GENERATOR">
+<style>[_nghost-ng-c4214649903]{font-family:Open Sans,sans-serif;color:#121212}</style></head>
+<body style="margin-left: 0px;">
+<center>
+    <table width="95%">
+        <tbody><tr>
+            <td colspan="2">
+                <table width="100%">
+                    <tbody>
+                    <tr>
+                                                <td valign="top" align="center">
+                            <font size="4" color="#000000" face="Verdana, Arial, Helvetica">Diario delle Lezioni
+                                <br>A.A. 2022/2023                                <br><br><a href="https://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.">
+                                    Sistemi Operativi e Lab.</a>
+                                <br><a href="http://www.ingmo.unimore.it/L/IngInf">
+                                    Ingegneria Informatica - Laurea Triennale</a>
+                            </font><br>
+                        </td>
+                                            </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table cellpadding="5" cellspacing="0" border="1" width="100%" bordercolor="silver">
+                    <tbody>
+                    <tr bgcolor="#DDEEFF">
+                        <td>
+                            <div class="text" align="center"><font size="2"><b>Data</b></font></div>
+                        </td>
+                        <td>
+                            <div class="text" align="center"><font size="2"><b>Argomento</b></font></div>
+                        </td>
+                        <td>
+
+                            <div class="text" align="center"><font size="2"><b>Tipo</b></font></div>
+                        </td>
+                        <td>
+                            <div class="text" align="center"><font size="2"><b>N Ore</b></font></div>
+                        </td>
+                        <td>
+                            <div class="text" align="center"><font size="2"><b>Riferimento</b></font></div>
+
+                        </td>
+                    </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Lun. 27/02/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Spiegazione dell'orario e dell'organizzazione 
+delle lezioni/esercitazioni.  Illustrazione di Moodle: la sezione delle 
+slide (comunicazione della password di lettura) e del sito: oltre le 
+slide, il registro on-line delle lezioni. Introduzione al corso: 
+programma, modalità di esame (con date fino a Settembre 2023); liste 
+esami su ESSE3, ma necessità di registrazione  all'applicazione per gli 
+esami per gestione voti esami; testi consigliati (Slide Programma).<br>Generalità
+ su cosa è un Sistema Operativo e, soprattutto, su cosa fa un Sistema 
+Operativo. Definizione di Multiprogrammazione e di Sistema Operativo 
+Multiprogrammato: introduzione al concetto di processo (entità attiva 
+che esegue un programma, entità passiva) e ai vari 'tipi' di processi 
+(I-O bound e CPU bound). Definizione di Multiprocesso e di Multiutenza. 
+Brevemente il caso dei Sistemi Operativi Time-sharing (scheduling a 
+quanti di tempo). Sistema Operativo come gestore delle risorse; punti di
+ vista esterno ed interno nello studio di un S.O. Gestore dei processi 
+(Nucleo/Kernel). Ripreso concetto di processo, spiegato processi utente e
+ processi di sistema, funzioni tipiche di un kernel (in particolare 
+scheduling). Stati di un processo (esecuzione, sospeso e pronto) e 
+transizioni di stato, descrittore di processo (code dei processi pronti e
+ code di sospensione) e cambio di contesto (Slide Introduzione sui SO, 
+1-9): rimasto da spiegare transizione da esecuzione a pronto!           
+          </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 01/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        GENERALITÀ - Ripreso brevemente i concetti 
+fondamentali della lezione precedente e in particolare gli stati di un 
+processo (esecuzione, sospeso e pronto). <br>Algoritmi di scheduling non
+ preemptive e preemptive; esempi di algoritmi di scheduling: algoritmo 
+round-robin basato su quanti di tempo (preemptive con uso di un timer); 
+algoritmo di scheduling a priorità statica basato su più code, una per 
+ogni livello di priorità, algoritmo a priorità dinamica con uso di 
+quanti di tempo differenti e meccanismi di penalizzazione/promozione con
+ priorità che quindi cala o cresce sulla base del consumo del quanto di 
+tempo (Slide Introduzione sui SO, 10-12). <br>Introdotto i due tipi di 
+interazione fra processi in ambito di programmazione concorrente: 
+interazione indiretta o competizione e interazione diretta o 
+cooperazione (Slide Introduzione sui SO, 13). <br>Problema del deadlock (Slide Introduzione sui SO, 14-15). <br>Gestore dei dispositivi di I/O: in particolare, gestione degli interrupt (Slide Introduzione sui SO, 16). <br>Gestore
+ della memoria centrale: in particolare gestione della allocazione con 
+tecnica della paginazione (TDP, traduzione indirizzi logici in fisici e 
+cache delle pagine). Memoria virtuale, in particolare gestione basata su
+ segmentazione paginata (Slide Introduzione sui SO, 16-19). Saltato per 
+ora Gestione della memoria secondaria (Slide Introduzione sui SO, 20).<br>Gestione interfaccia utente: interfacce grafiche e testuali (Slide Introduzione sui SO, 21).                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 02/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        FILE SYSTEM - Definizione di file, funzioni 
+tipiche del gestore, tipi di file. Punto di vista dell'utente con 
+illustrazione veloce dei principali comandi. Concetto di descrittore di 
+file e di directory (derivazione da telephone directory). Strutturazione
+ delle directory: Directory ad albero (nome assoluto, relativo alla 
+directory corrente e relativo semplice) e a grafo (concetto di Link) 
+(Slide File System, 1-7).<br>UNIX - Introduzione: storia e connessione 
+con Linguaggio di Programmazione (di sistema) C; Unix come sistema 
+operativo multigrammato (e multiprocesso) e multiutente (Slide 
+UNIX-Shell 1).<br>Fase di autenticazione: necessità di login e logout 
+(Slide UNIX-Shell 2): concetto di terminale (nelle lezioni se ne userà 
+uno virtuale).<br>File in UNIX: file come stream di byte e come 
+astrazione unificante per file ordinari, directory e file speciali come i
+ dispositivi (contenuti in /dev) (Slide UNIX-Shell 3). Struttura del 
+File System di UNIX: directory tipiche (Slide UNIX-Shell 3). <br>Spiegazione
+ della fase di autenticazione: file /etc/passwd con suo formato (comando
+ cat per visualizzare un file di testo) e file /etc/shadow (Slide 
+UNIX-Shell 4 e 5).<br>Shell - Uso di PC collegato ad un server Linux. 
+Nel seguito fra parentesi si indicano le slide su "UNIX e la Shell" cui 
+il registro fa riferimento.<br>Mostrato sul server Linux la fase di 
+autenticazione; le directory tipiche della directory radice (/). 
+Mostrato file /etc/passwd in due modi e quindi mostrato risultato del 
+comando cd per cambiare directory e del comando pwd per visualizzare la 
+directory corrente (all'inizio è la HOME directory: comando echo $HOME).
+ Mostrato che non è possibile visualizzare il file /etc/shadow (Slide 
+5): precisazione sull'utente 'root' e spiegazione sudoers. Comando id 
+per vedere UID e GID. <br>Dimostrazione della multi-utenza: collegamento
+ anche con un secondo account (sonod) e mostrato di nuovo comando id e 
+comando who (anche versione w).<br>Esempio di utente che ha un comando 
+'strano' inserito nel file /etc/passwd invece che una shell (Slide 5): 
+prova di collegamento di questo utente.  <br>Spiegazione funzionamento 
+della shell come processore comandi con, in genere, creazione di un 
+processo figlio (sotto-shell) che esegue il comando (Slide 6): verifica 
+con uno del comando ps con opzione -f che mostra la relazione di 
+parentela.                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        4                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Lun. 06/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Shell - Ripreso funzionamento della shell come 
+processore comandi: di nuovo comando ps con altre opzioni (-l e -e): 
+introdotto anche il comando man (manual) (Slide 8).<br>Possibilità di 'lanciare' quindi usare diverse shell (Slide 8): verifica dei rispettivi processi con comando ps.<br>Ripreso
+ organizzazione del File System e nomi di file assoluti, relativi alla 
+directory corrente e relativi semplici (Slide 9). Nomi di file molto 
+lunghi e con più caratteri punto: introdotto comando ls (list).<br>Caso 
+particolare di nomi che iniziano con il carattere punto: uso di opzione 
+-A di ls per visualizzare questi nomi "nascosti". Spiegato perché di 
+questa scelta, introducendo i due elementi sempre presenti in ogni 
+directory: "." e ".." e il loro effetto sull'albero che diventa un grafo
+ e mostrato esempi di uso: in particolare, ls -a, cd .. o cd ../.. 
+(sempre Slide 9). Mostrato simulazione della gerarchia della Slide 9 
+(comando ls -R, cioè ricorsione). Approfondimento su ls: varie opzioni 
+(Slide 10); esempi di ls -r, ls -t, ls -F e ls -l e spiegato nel 
+dettaglio importanza di ls -d.<br>Metacaratteri principali trattati 
+dalla shell (* e ?) (sempre Slide 9): spiegato concetto di pattern 
+matching ed esempi di uso; mostrato effetto dell'uso di * e ? 
+utilizzando sh -x.<br>Protezione dei file (Slide 11): diritti di accesso
+ (r, w e x) per user, group e other e uso di ls -l (long). Concetto di 
+superutente (root) e spiegato come avvengono i controlli: fatto vedere 
+diritti di /etc/passwd e di /etc/shadow.                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 08/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Shell - Precisazione su significato di R del ps 
+-l: Running e Runnable e quindi Ready! Precisazione su variabile di 
+ambiente $HOME. <br>Ripreso discorso su protezione dei file (Slide 11): 
+diritti di accesso (r, w e x) per user, group e other e uso di ls -l 
+(long); fatto vedere accesso allo stesso file da parte di due utenti 
+diversi, ma appartenenti allo stesso gruppo. Il comando chmod, versione 
+simbolica ed ottale: mostrato esempio di uso sull'accesso ad un file. 
+Significato dei diritti di accesso per le directory. Comandi chown e 
+chgrp solo per il SUPERUTENTE (Slide 12).<br>Creazione di una directory 
+(comando mkdir) e cancellazione di una directory(comando rmdir, solo con
+ directory vuota). Copia di un file in una directory, copia normale, 
+copia che preserva i timestamps del file sorgente e copia ricorsiva. 
+Cancellazione di file (comando rm e importanza della opzione -i, 
+interactive); opzione -r di rm per cancellazione ricorsiva e quindi 
+anche di directory. Comando cat e comando more per visualizzare il 
+contenuto di file di testo: differenze (Slide 13).<br>Generalizzazione 
+del concetto di file (Slide. 8 del File System). Concetto di filtro e di
+ standard input, standard output e standard error: associazioni di 
+default e loro modifica con RIDIREZIONE (Slide 14, 15 e 16). Primi 
+esempi di ridirezione in uscita e in append usando il comando pwd e ls. 
+Comandi che possono essere usati sia come comandi normali che come 
+comandi-filtri (di nuovo Slide 18). Uso come comandi-filtri, in 
+particolare, per ridirezione in ingresso oltre che in uscita: in 
+specifico, il filtro cat usato come semplice editor; concetto di EOF da 
+tastiera (^D) e differenza dall'abort di un comando con ^C; cat usato 
+come alternativa al comando cp. Ridirezione a vuoto: sia per azzerare un
+ file che per crearlo (vuoto).                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 09/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Esercitazione in Laboratorio (S1) - Usato il 
+LINFA allargato con l'aiuto di Silvia Cascianelli: si veda il documento 
+Esercitazione9Marzo2023.pdf.<br>                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        E                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        4                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        			    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Laboratorio">Il materiale delle esercitazioni si trova seguendo il link</a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Lun. 13/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Shell - Ripreso discorso sulla ridirezione 
+(Slide 14, 15 e 16). Mostrato programma in C che si comporta come il 
+comando-filtro cat: esempio di uso senza ridirezione e quindi con 
+ridirezione in ingresso e anche in uscita.<br>Altri esempi di filtri (di
+ nuovo Slide 14): comando/filtro more; comando/filtro sort [opzioni -r, 
+reverse, -f, insensibile a maiuscole/minuscole, -c/-C, check se ordinato
+ (spiegato valore di successo e di insuccesso con echo $?), -u, unique 
+cioè ordinamento con eliminazione dei doppi]; comando/filtro grep 
+[opzioni -n per vedere il numero d'ordine della linea nel file, -i per 
+cercare il pattern maiuscolo o minuscolo, -v per invertire la ricerca e 
+sintassi particolari come '^c' per cercare le linee che iniziano per c, 
+'a$' per cercare le linee che terminano per a, e infine '\.$' per 
+cercare le linee che terminano con il carattere punto (necessità di 
+usare il meta-carattere di escape \); comando/filtro wc (con opzioni -c,
+ -w, -l e differenze fra filtro e comando); comandi/filtri head e tail 
+(opzione con numero di linee); comando/filtro rev.<br>Chiarimento su 
+numeri impliciti della ridirezione dello standard input e dello standard
+ output. Ridirezione dello standard error (Slide 17) con esempi: in 
+particolare, uso di /dev/null. (Slide 18 per ora saltato).<br>Piping: 
+composizione di comandi/filtro (Slide 19 e 20). Realizzazione mediante 
+più processi e canali di comunicazione. Esempi semplici con uso anche 
+del filtro tee ed esempio che mostra la presenza di un processo per ogni
+ comando in piping.<br>Sottolineato di non usare il piping quando non 
+serve con precisazione sul comando more usato come comando in presenza 
+di file eseguibili!                     </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 15/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Shell - Introduzione alla programmazione in 
+shell (Slide 21): in particolare, introdotto convenzione nei nomi dei 
+file comandi (.sh) e spiegato necessità di introdurre lo shabang 
+(#!/bin/sh). <br>Spiegato concetto di variabile di shell (Slide 22): 
+valore come stringa, sintassi assegnamento e sintassi per riferire il 
+valore. <br>Concetto di ambiente di shell (Slide 23 e 24): il processo 
+SHELL generato per l'esecuzione di ogni comando riceve per copia 
+l'ambiente dello shell padre (con ad esempio, PATH, HOME e directory 
+corrente): comando env per visualizzare l'ambiente. <br>Differenza fra 
+variabili di ambiente e variabili di shell: il comando export per 
+passare una variabile di shell nell'ambiente ed esempio relativo (di 
+fatto primo esempio di file comandi cioè di script e quindi spiegato 
+come scriverlo con un editor e quindi impostargli il diritto di 
+esecuzione). Mostrato che una modifica di una variabile di ambiente 
+effettuata da un sotto-shell ha effetto solo per quel processo e non 
+anche nel processo padre (con due altri file comandi, il secondo con le 
+variabili di ambiente PATH, HOME e directory corrente). <br>Sostituzioni attuate dallo shell (Slide 25 e 26). Mostrati gli ulteriori metacaratteri [ ] con vari esempi (Slide 27).<br>Ripreso
+ concetto di variabile (Slide  28):Esempio di variabili shell con 
+necessità sia di valutazione di comandi (uso di backquote ``) che del 
+comando expr (con un altro file comandi).                     </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 16/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Esercitazione in Laboratorio (S2) - Usato il 
+LINFA allargato con l'aiuto di Silvia Cascianelli: si veda il documento 
+Esercitazione16Marzo2023.pdf.                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        E                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        4                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        			    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Laboratorio">Il materiale delle esercitazioni si trova seguendo il link</a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Lun. 20/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Shell - Inibizione delle sostituzioni attuate dallo shell (Slide 29): esempi vari e necessità di eval. <br>Passaggio di parametri nei file comandi (Slide 30): $1, $2, $3, etc; spiegato significato di $0; spiegato comandi shift e set. <br>Introdotto
+ quindi altre pseudo-variabili predefinite (Slide 30): $*, $#, $?, $$: 
+mostrato esempio di file comandi (file provaPar) e suo funzionamento con
+ 4 parametri e spiegato il funzionamento del comando shift. Mostrato un 
+esempio di file comandi (file DIR.sh) con uso della 
+pseudo-variabile/parametro $0 e varie invocazioni. Ripreso concetto di 
+return code dei comandi (Slide 31). <br>La struttura di controllo if per
+ realizzare l'alternativa semplice (Slide 32): primi esempi semplici 
+(file if1.sh, if2.sh e if3.sh). Introdotto il comando test (Slide 33): 
+altri esempi di if (if4.sh e if5.sh). LASCIATO DA GUARDARE AGLI STUDENTI
+ la differenza di test -eq e di test =. Altri esempi di if anche con il 
+comando read (Slide 34, file LeggiEMostra.sh): uso di ridirezione per i 
+file comandi e necessità di ridirezione su /dev/tty. <br>La struttura di
+ controllo case per realizzare l'alternativa multipla (Slide  35): primo
+ esempio di uso che consente maggiore flessibilità nella interazione con
+ l'utente (file readCase.sh). <br>Struttura di controllo per i cicli enumerativi: for (Slide  36). <br>                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 22/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Shell - Ripreso struttura di controllo for per i
+ cicli enumerativi: for (Slide 36); diversi esempi (file for1.sh, 
+for1-conConteggio.sh e crea.sh). Altri esempi di liste usabili nei for 
+(file for4.sh e for4Bis.sh).<br>Lasciato da guardare agli studenti le 
+altre strutture di controllo per i cicli non enumerativi: while e until 
+(Slide 37): un esempio ciascuno (file ce.sh e ceUtente.sh).<br>Discorso 
+generale di come strutturare le soluzioni (presentazione powerpoint): 
+due file comandi, uno iniziale e uno ricorsivo dato che la struttura 
+gerarchica del file system è una struttura dati ricorsiva e spiegato la 
+necessità del file iniziale per controlli, preparazione dell'ambiente 
+(settaggio della variabile di ambiente PATH e suo export) e invocazione 
+del file ricorsivo. Primo esempio di ricerca di un file in una gerarchia
+ con due file comandi: illustrato il primo file comandi (Slide 38, file 
+Beginc.sh) e tutti i controlli. Esempi di invocazioni sbagliate/corrette
+ lasciate da guardare agli studenti.<br>Mostrato secondo file comandi, 
+quello ricorsivo, nella versione con ricerca breath-first (Slide 39, 
+file Cercafile.sh): mostrato tramite una presentazione powerpoint 
+passo-passo quello che succede nelle varie attivazioni ricorsive su una 
+semplice gerarchia. Lasciato da guardare agli studenti cosa succede nel 
+caso di ricerca in DEPTH-FIRST.<br>Concetto di link (hardware) per i 
+file (comando ln, Slide 40): comando ln. Spiegato come si realizza in 
+UNIX il concetto di link: struttura directory (Slide 41) con i-number e 
+i-node: mostrato uso di opzione -i di ls e spiegato significato seconda 
+colonna mostrata da -l (cioè numero di link).                     </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 23/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Shell - Ripreso concetto di link hardware e 
+spiegato contenuto dell'I-NODE in particolare numero di link (slide 42).
+ Mostrato che cambiando il file dal link il cambiamento è visibile anche
+ dal link originale. Differenze con il comando cp per copiare file.<br>Ripreso
+ comando rm, ma spiegato che in realtà opera la cancellazione di un link
+ e, se numero di link uguale a zero, anche del contenuto del file (slide
+ 41).<br>Mostrato funzionamento dei link hardware per le directory e comando mkdir.<br>Comando per spostare i file o semplicemente rinominarli (comando mv): spiegazione in base ai comandi ln e rm (slide 41). <br>Concetto
+ di link software per file e directory (comando ln -s) e differenza 
+rispetto al link hardware (slide 42): in particolare, mostrato 
+comportamenti diversi in caso di cancellazione link sofrware e di 
+cancellazione del file (dangling reference); necessità di uso per le 
+directory e per creare link in gerarchie residenti su dispositivi fisici
+ diversi.                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        1                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 23/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Esercitazione in Laboratorio (S3) - Usato il 
+LINFA allargato con l'aiuto di Silvia Cascianelli: si veda il documento 
+Esercitazione23Marzo2023.pdf.                     </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        E                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        3                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        			    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Laboratorio">Il materiale delle esercitazioni si trova seguendo il link</a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Lun. 27/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Shell - Presentato esercizio che conta tutti i 
+file presenti in una gerarchia: mostrato in modo approfondito la 
+versione (ver1) con file temporaneo globale che raccoglie tutti i nomi 
+assoluti dei file contati e stampa il loro nome assoluto nel file 
+comandi principale e mostrati il contenuto del file comandi ricorsivo. 
+Lasciato come esercizio di guardare le altre versioni: versione con 
+variabile di ambiente e valore di ritorno (ver2), versione con variabile
+ di shell e valore di ritorno (ver3) e versione con uso di scrittura e 
+lettura in un file temporaneo globale del valore del conteggio (ver4).<br>Esecuzione
+ di comandi in background (Slide 44 e 45): problema di ridirezione 
+standard output e standard error (consigliate) e dello standard input 
+(necessaria almeno in Bourne shell!). Uso del comando kill.<br>Altri comandi: date, diff con dettaglio sul valore di ritorno (Slide 46); lasciato da guardare il comando find. <br>Mostrato
+ il testo della parte in Shell dell'esame del 18 Gennaio 2017 (presenza 
+di nome relativo semplice di directory): spiegato tramite una 
+presentazione powerpoint il testo, i requisiti del problema, una 
+invocazione di prova e una gerarchia di prova.                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 29/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Shell - Svolta la parte SHELL di 4 esercizi di esame:<br>1)
+ Ripreso testo della parte in Shell del 18 Gennaio 2017 (presenza di 
+nome relativo semplice di directory):  mostrato file 18Gen17.sh e FCR.sh
+ e funzionamento sulla gerarchia di prova. <br>2) Soluzione della parte 
+in Shell del 25 Gennaio 2025 (presenza di due stringhe); discusso sul 
+fatto che in questo testo si deve svolgere tutto il problema nel file 
+comandi ricorsivo: spiegato tramite una presentazione powerpoint il 
+testo, i requisiti del problema, una invocazione di prova e una 
+gerarchia di prova; mostrato file FCP.sh e FCR.sh e funzionamento sulla 
+gerarchia di prova.<br>3) Soluzione della prima prova in itinere del 7 
+Aprile 2017 (presenza di nome relativo semplice di file, con conteggio 
+globale dei file sorted creati): spiegato tramite una presentazione 
+powerpoint il testo, i requisiti del problema, una invocazione di prova e
+ due gerarchie di prova; mostrato file FCP.sh e FCR.sh e funzionamento 
+sulle due gerarchie di prova.<br>4) Mostrato testo della parte in Shell 
+del 17 Gennaio 2018 (presenza di numeri &gt; 0 e singolo carattere); 
+spiegato tramite una presentazione powerpoint il testo e mostrato file 
+FCP.sh solo per la parte di controllo dei parametri.<br>                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 30/03/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Esercitazione in Laboratorio (S4) - Usato il 
+LINFA allargato con l'aiuto di Silvia Cascianelli: si veda il documento 
+Esercitazione30Marzo2023.pdf.                     </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        E                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        4                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        			    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Laboratorio">Il materiale delle esercitazioni si trova seguendo il link</a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Lun. 03/04/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Shell - ULTIMA LEZIONE SULLA SHELL.<br>Svolta la parte SHELL di 3 esercizi di esame:<br>1)
+ Soluzione della prima prova in itinere dell'11 Aprile 2014 (necessità 
+di tanti file temporanei): spiegato tramite una presentazione powerpoint
+ il testo, i requisiti del problema, una invocazione di prova e due 
+gerarchie di prova; mostrato file fasi.sh e FCR.sh e funzionamento sulle
+ due gerarchie di prova. <br>2) Soluzione della prima prova in itinere 
+del 13 Aprile 2012 (due fase A/B e conteggio livelli delle gerarchie): 
+spiegato tramite una presentazione powerpoint il testo, i requisiti del 
+problema, una invocazione di prova e una gerarchia di prova con 4 
+livelli; mostrato ver1 della soluzione e quindi file fasi1e2.sh e FCR.sh
+ e funzionamento sulla gerarchia di prova. <br>3) Soluzione della prima 
+prova in itinere dell'15 Aprile 2016 (ricerca di directory foglia con 
+ulteriore vincolo sui file): spiegato tramite una presentazione 
+powerpoint il testo, i requisiti del problema, una invocazione di prova e
+ tre gerarchie di prova; mostrato file fasi.sh e FCR.sh e funzionamento 
+sulle tre gerarchie di prova. <br>Lasciato da guardare agli studenti una
+ presentazione powerpoint in cui sono riportate le caratteristiche 
+generali dei testi delle parti SHELL dei testi di esame con la 
+classificazione degli esercizi visti finora e di quelli che verranno 
+proposti alla prossima esercitazione.                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 05/04/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Esercitazione in Aula (S5) - Usato l'aula per 
+questa esercitazione EXTRA con l'aiuto di Silvia Cascianelli: si veda il
+ documento Esercitazione5Aprile2023(ExtraInAula).pdf.                   
+  </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        E                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        			    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Laboratorio">Il materiale delle esercitazioni si trova seguendo il link</a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Lun. 17/04/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Visione di insieme punti di vista esterno: shell e linguaggio C; accenno a punto di vista interno.<br>Il
+ linguaggio C come linguaggio di sistema (Slide C/UNIX 1-3): 
+caratteristiche di basso livello ed interazione con il sistema operativo
+ UNIX. Spazio di indirizzamento di un processo: introdotto area dati, 
+area codice e area Kernel: per quest'ultima, spiegato argc, argv e envp 
+(con parallelismo con i concetti della shell), introdotto tabella dei 
+file aperti. Spiegato cosa sono le primitive. Presentato in generale le 
+operazioni di sistema (PRIMITIVE) per accedere ai file (Slide File 
+System 9-11): creazione/cancellazione e lettura/scrittura; 
+ottimizzazione: apertura/chiusura. Visione di basso livello dei file per
+ UNIX/LINUX (Slide C/UNIX 4-6) e operazioni su file: creat, open, close.
+ Tabella dei file aperti (TFA) per ogni processo ===&gt; file descriptor
+ (o handle) come indice della TFA. File descriptor per standard input, 
+output ed error. Note su close e open/creat (Slide C/UNIX 7). Esempi di 
+apertura: 1) di un file con stampa del file descriptor ritornato dalla 
+open con verifica anche di rassegnazione dello stesso fd in seguito ad 
+una close; 2) ripetuta dello stesso file per calcolare la dimensione 
+della TFA di ogni processo. Discorso generale sui metodi di accesso 
+(Slide File System 12-13): metodo di accesso sequenziale (concetto di 
+file pointer o I/O pointer). Ripreso concetto di File pointer in C/UNIX 
+ (Slide C/UNIX 9) e introdotto le operazioni di basso livello sui file 
+in UNIX/LINUX (Slide C/UNIX 10): read e write. Osservazioni importanti 
+sui tipi di dati che possono essere letti da e scritti su file (Slide 
+C/UNIX 11).<br>                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 19/04/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        File C - Spiegato velocemente uso del man anche 
+per le primitive (in particolare sezione 2, man -s 2 &lt;primitiva&gt;).
+ Esempi di read e write: a) copia di file con parametri e controlli 
+(Slide 15) con spiegazione di BUFSIZ ; b) copia di file con PERM diversi
+ e spiegazione su influenza di umask che può avere effetto sui diritti 
+specificati all'atto della creazione; c) copia con ridirezione (Slide 
+C/UNIX 16); d) Implementazione di un 'clone' di cat.<br>Rimarcato che la
+ molteplicità di caratteri da leggere con una read dipende dalla 
+specifica del problema (Slide C/UNIX 16). Sottolineato che i controlli 
+che avvengono all'apertura/creazione di un file sono basati su Effective
+ UID ed Effective GID del processo che richiede l'operazione (che 
+possono essere diversi dal Real UID e Real GID) (Slide C/UNIX 12). 
+Illustrazione del concetto di File System CONDIVISO fra tutti i processi
+ (Slide C/UNIX 13). <br>Implementazione della ridirezione in ingresso e 
+in uscita (Slide C/UNIX 17): simulazione in C della ridirezione in 
+ingresso e in uscita e versione con stampa degli fd usati in input e in 
+output su /dev/tty.<br>Operazione non sequenziali: lseek (Slide C/UNIX 
+18). Esempio di append su un file (Slide C/UNIX 19): implementazione 
+della ridirezione in uscita in append (cioè &gt;&gt;). <br>                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 20/04/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Esercitazione in Laboratorio (C1) - Presentazione della utility make da parte di Silvia Cascianelli.<br>Usato
+ il LINFA allargato con l'aiuto di Silvia Cascianelli: si veda il 
+documento Esercitazione20Aprile2023.pdf.                       </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        E                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        4                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        			    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Laboratorio">Il materiale delle esercitazioni si trova seguendo il link</a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 26/04/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        File C - Spiegato significato della atomicità 
+delle operazioni primitive, in particolare read e write su file (Slide 
+C/UNIX 20).<br>Ripreso schema del funzionamento della SHELL per generare un processo figlio per eseguire un comando non interno.<br>Processi
+ UNIX: modello ad ambiente locale e sua eccezione relativamente al file 
+system (S. Processi 1). Tipi di processi, scheduling, memoria virtuale, 
+swapping e modi di esecuzione dei processi (S. Processi 2). Immagine di 
+un processo: parte utente e di kernel e Tabelle di sistema: Process 
+Table e Text Table (S. Processi 4-7): spiegato descrittore di processo e
+ condivisione del codice. Stati di un processo in UNIX (S. Processi 9) 
+con confronti stati di un processo nei Sistemi Operativi multiprocesso 
+generali.<br>Primitive per la gestione dei processi: creazione (fork) e 
+sui effetti (S. Processi 10-11). Primo esempio semplice (programma 
+unoDue.c) con anche presentazione in powerpoint. Illustrato primitive 
+getpid, getppid, getuid, geteuid, getgid e getegid (S. Processi 19): 
+ulteriore esempio (programma unodueConPID-UID-GID.c). Mostrato, anche, 
+il problema di 'mescolamento' delle stringhe scritte su standard output a
+ causa dello standard output condiviso (anche come I/O Pointer). Valore 
+di ritorno della fork (S. Processi 12): altro esempio semplice con 
+differenziazione del codice (programma unoEdue.c).<br>Osservazioni su 
+fork (S. Processi 13). Primitiva wait in generale (S. Processi 20). 
+Esempio di uso di fork e wait, ma senza uso del valore ritornato dal 
+figlio con la exit (programma provaWait.c). Possibili terminazioni di un
+ processo: anormale e normale, in particolare con la exit (S. Processi 
+22) Spiegato significato del valore ritornato dalla wait come effetto 
+collaterale sul parametro intero di cui deve essere passato l'indirizzo e
+ spiegato le operazioni di mascheramento sui byte di tale intero e 
+schema di invocazione della wait (S. Processi 23) anche con 
+presentazione in powerpoint. Altro esempio di uso di wait con recupero 
+valore di exit: con mascheramento a mano (programma status1.c, mentre 
+programma status lasciato da guardare agli studenti). Spiegato vincolo 
+che il valore che può essere ritornato con la exit al padre debba essere
+ positivo e minore o uguale a 255. Rispiegato funzionamento shell nel 
+caso di esecuzione di un comando non interno in foreground (fork+wait) e
+ in background (solo fork): ancora uso della stessa presentazione in 
+powerpoint.                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 27/04/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Esercitazione in Laboratorio (C2) - Usato il 
+LINFA allargato con l'aiuto di Silvia Cascianelli: si veda il documento 
+Esercitazione27Aprile2023.pdf.                       </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        E                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        4                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        			    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Laboratorio">Il materiale delle esercitazioni si trova seguendo il link</a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 03/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Processi UNIX - Rispiegato funzionamento shell 
+nel caso di esecuzione di un comando non interno in foregroud 
+(fork+wait) e in background (solo fork): manca ancora capire come 
+avviene l'esecuzione del comando da parte del processo figlio della 
+shell. Quindi, famiglia di primitive EXEC: execv, execl, execvp e 
+execlp; effetti exec (S. Processi 27-28). Esempi semplici di uso (S. 
+Processi 29-30): richiesta di esecuzione di ls con due esempi corretti 
+(myls1.c e myls2.c) e un esempio sbagliato (mylsErrato.c); richiesta di 
+esecuzione di un programma eseguibile definito dall'utente (callecho.c e
+ myecho.c). Uso di exec dopo fork e presentato situazione dei processi 
+padre e figlio prima e dopo l'invocazione della primitiva exec (S. 
+Processi 32-33): spiegazione su ottimizzazione di Linux (S. Processi 
+18).Esempi di uso di fork ed exec (S. Processi 32): mylsConFork.c e 
+myGrepConFork.c con connessione con comportamento della SHELL, in 
+particolare, implementazione ridirezione dello standard output.	<br>Esempio
+ di un programma  (comando.c) che simula in modo molto semplice un 
+processore dei comandi (S. Processi 36): uso della variabile errno e 
+della primitiva di gestione degli errori perror (S. Processi 37).<br>Completato
+ discorso sui 2 bit speciali che sono presenti nell'I-NODE di un file 
+solo nel caso che sia eseguibile (S. 43 - SHELL); in particolare, 
+comportamento del SUID anche grazie ad una presentazione in powerpoint: 
+il comando passwd e il file /etc/shadow.                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 04/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Esercitazione in Laboratorio (C3) - Usato il 
+LINFA allargato con l'aiuto di Silvia Cascianelli: si veda il documento 
+Esercitazione4Maggio2023.pdf.                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        E                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        3                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        			    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Laboratorio">Il materiale delle esercitazioni si trova seguendo il link</a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 04/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        (in realtà mezz'ora)<br>Processi UNIX - Ripreso 
+comportamento del SUID anche grazie alla presentazione in powerpoint già
+ usata nella precedente lezione: due programmi scritti in C con un 
+esempio (suid.c)  e un contro-esempio (suid-sbagliato.c).               
+     </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        1                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Lun. 08/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Processi UNIX - Ripreso famiglia di primitive 
+EXEC: osservazioni con anche execve e execle (S. Processi 31). Primitive
+ viste finora (S. Processi 38).<br>PIPE - Interazione fra processi in 
+UNIX (S. Pipe 1). Presentato in generale problema produttori-consumatori
+ per passare informazioni (dati) da un processo all'altro. Comunicazione
+ mediante PIPE (S. Pipe 2): comunicazione fra processi: in particolare, 
+introdotto i termini di Produttore-Consumatore, Sender-Receiver, 
+Mittente-Destinatario e Client-Server (declinati al singolare o al 
+plurale). Creazione pipe e omogeneità con i file (S. Pipe 3-4). Calcolo 
+della lunghezza di una pipe (S. Pipe 5). Uniformità con i file e 
+differenze sostanziali (Slide Pipe 5). Processi che possono comunicare 
+tramite una pipe: necessità di relazione di parentela (Slide Pipe 6). 
+Esempio Produttore (figlio) e Consumatore (padre) usando una pipe (Slide
+ Pipe 7): necessità di chiusura dei lati non necessari (Slide Pipe 8-9).
+ Dettagli su tabella interna associata ad ogni pipe (Slide Pipe 10).<br>                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 10/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        PIPE -  Problemi (Slide Pipe 11-12): a) pipe 
+senza scrittore; b) caso pipe senza lettore con invio del segnale 
+SIGPIPE.<br>Esame del 5 Giugno 2015 (seconda prova in Itinere, quindi 
+solo parte C): processo nipote che esegue tail -1 su file associato e 
+figlio connesso in pipe che ricava lunghezza linea e la comunica al 
+padre: presentato preliminarmente una versione ridotta del testo, che 
+esclude la presenza dei processi nipoti e analizzate dettagliatamente le
+ specifiche: mostrato codice e funzionamento.<br>Ripreso il testo 
+completo della seconda prova in itinere del 5 Giugno 2015 e analizzate 
+dettagliatamente le ulteriori specifiche. Ma per poterlo svolgere 
+bisogna prima analizzare una ulteriore primitiva: Primitiva DUP (Slide 
+Pipe 13). Esempio di possibile implementazione del PIPING dei comandi 
+(Slide Pipe 14-15). Verifica su jsh (che è una shell che a livello 
+implementativo è simile alla BOURNE Shell) del legame di parentela fra 
+processi coinvolti e chi esegue cosa e verifica anche nella BASH in cui 
+l’implementazione è differente. <br>                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 11/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Esercitazione in Laboratorio (C4) - Usato il 
+LINFA allargato con Silvia Cascianelli e Letizia Leonardi collegata in 
+remoto: si veda il documento Esercitazione11Maggio2023.pdf.             
+       </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        E                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        4                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        			    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Laboratorio">Il materiale delle esercitazioni si trova seguendo il link</a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Lun. 15/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        File C - Ripreso discorso su Tabella dei file 
+aperti (TFA) per ogni processo e fatto notare che era stato detto che il
+ collegamento con i file era più complicato in UNIX di quanto spiegato 
+come concetto (Slide C/UNIX 6). Relazioni fra TFA dei singoli processi e
+ tabelle di sistema (Slide Unix Tabelle 1-2): Tabella dei file aperti di
+ Sistema e Tabella degli I-NODE attivi. Quindi dopo aver introdotto 
+queste due tabelle si possono capire due discorsi lasciati indietro e 
+cioè:<br>Processi UNIX - Condivisione di file e I/O pointer per file 
+aperti da padre prima della fork (Slide Processi 14-15) e condivisione 
+in generale di un file (Slide Processi 16-17). <br>Ripreso il testo 
+completo della seconda prova in itinere del 5 Giugno 2015 e analizzate 
+dettagliatamente le ulteriori specifiche: mostrato codice e 
+funzionamento.<br>Sincronizzazione in UNIX mediante SEGNALI: definizione
+ dei segnali (Slide Segnali 1) e loro trattamento (Slide Segnali 2). 
+Elenco (parziale) segnali (Slide Segnali 3). Primi esempi di segnali 
+semplici (Slide Segnali 4) con programma loop: SIGINT (CTRL-C), SIGTERM e
+ SIGKILL. <br>                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 17/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        SEGNALI - Ripreso primi esempi di segnali 
+semplici (ancora Slide Segnali 4) con programma illegal: SIGILL. 
+Primitiva SIGNAL (Slide Segnali 5): definizione di un HANDLER, default e
+ possibilità di ignorare un segnale. Osservazione sui segnali (Slide 
+Segnali 6) e in particolare: a) comportamento in seguito a fork ed exec 
+(Slide Segnali 7); b) differenze di gestione fra versione BSD e System V
+ (Slide Segnali 6) con esempio di uso del segnale corrispondente al 
+CTRL-C: comportamento in BSD (Slide Segnali 8) con prova di 
+funzionamento e spiegato solo a parole comportamento in System V (Slide 
+Segnali 9). Primitiva KILL (Slide Segnali 10) e PAUSE (Slide Segnali 
+11). Primo esempio semplice di uso di KILL e PAUSE (oltre che di SIGNAL)
+ (Slide Segnali 12-13). Primitiva ALARM (Slide Segnali 11): Esempio di 
+pause e alarm (Slide Segnali 14-15). Ripreso esempio calcolo lunghezza 
+pipe (Slide Pipe 16): trattamento mediante SIGALRM. Ripreso esempio di 
+pipe senza lettore (Slide Pipe 14-15): trattamento segnale SIGPIPE.     
+                </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 18/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Esercitazione in Laboratorio (C5) - Usato il 
+LINFA allargato con Silvia Cascianelli e Letizia Leonardi collegata in 
+remoto: si veda il documento Esercitazione18Maggio2023.pdf.             
+        </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        E                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        4                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        			    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Laboratorio">Il materiale delle esercitazioni si trova seguendo il link</a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Lun. 22/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Processi UNIX - SOLO ESERCIZI:<br>1) Esame 
+dell'11 Luglio 2018 (solo parte C): figli comunicano posizione del 
+carattere da cercare al padre e attesa dell'OK o meno dal padre ai figli
+ se riportare delle informazioni su standard output. Analisi dettagliata
+ delle specifiche e individuato alcuni elementi importanti della 
+soluzione: due array di pipe e array finito e lo schema di comunicazione
+ fra figli e padre. Mostrato soluzione e mostrato funzionamento in 
+particolare per i due file mostrati nella presentazione powerpoint.<br>2)
+ Seconda prova in itinere del 26 Maggio 2017: analizzato lo schema di 
+comunicazione a pipeline, in particolare il numero di pipe che servono 
+(N, e cioè quanti i processi figli) e il fatto che nella soluzione ogni 
+figlio Pi legge dalla pipe i-1 e scrive sulla pipe i; al padre arriva 
+una singola struttura (con 3 campi); necessità che il padre salvi in un 
+array creato dinamicamente i pid dei figli per quello che deve stampare 
+una volta ricevuta la struttura dall'ultimo figlio.<br>                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 24/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Processi UNIX - Ripreso slide stati di un 
+processo UNIX (Slide Processi 9): spiegazione dettagliata dello stato 
+ZOMBIE e della sua necessità. Processi ZOMBIE (Slide Processi 25) ed 
+ereditati da INIT (Slide Processi 26): due esempi relativi. Parlato 
+anche dei processi zombie ereditati da init.<br>Inizializzazione del 
+sistema UNIX e comportamento della shell (Slide Processi 34-35): 
+verifica sia sul sistema usato normalmente che su un sistema con 
+installata una versione meno recente di Linux.<br>Presentato Parte C 
+dell'esame del 17 Febbraio 2021: Q parametri, Q file; padre genera Q 
+processi figli; ogni figlio è associato ad un file; tutti i file hanno 
+lunghezza in linee uguale; comunicazione a ring dal primo figlio 
+all'ultimo e poi di nuovo al primo, con il padre che fa l'innesco; i 
+figli devono cercare in ogni linea i caratteri numerici e quando hanno 
+l'OK devono scrivere su standard output alcune informazioni insieme con 
+la linea stessa.<br>Mostrato soluzione e prova di funzionamento.<br>                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 25/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Esercitazione in Laboratorio (C6) - Usato il 
+LINFA allargato con l'aiuto di Silvia Cascianelli: si veda il documento 
+Esercitazione25Maggio2023.pdf.                     </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        E                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        4                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        			    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Laboratorio">Il materiale delle esercitazioni si trova seguendo il link</a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Lun. 29/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        Processi UNIX - Solo Esercizi:<br>1) Parte C 
+dell'esame del 19 Gennaio 2022: N + 1 parametri, N file e un intero 
+positivo e dispari (C); padre genera 2 * N processi figli; i figli 
+devono essere considerati a coppie: figlio Pi e figlio Pi+N; ogni coppia
+ è associata allo stesso file; comunicazione dal primo figlio della 
+coppia al secondo figlio della coppia; il secondo figlio della coppia 
+deve creare un file con nome ottenuto dal concatenamento del nome del 
+suo file e della stringa ".mescolato" e deve leggere a blocchi di 
+grandezza C dalla seconda metà del file, mentre il primo figlio della 
+coppia deve leggere dalla prima  metà del file sempre blocchi di 
+grandezza C; il secondo figlio scrive sul file creato i blocchi in modo 
+mescolato, alternativamente i suoi e quelli ricevuti dal primo figlio. 
+Mostrato soluzione e prova di funzionamento.<br>2) Parte C dell'esame 
+del 12 Luglio 2017: 2N parametri, nomi assoluti di file intercalati da 
+numeri interi (strettamente positivi) che rappresentano la loro 
+lunghezza in linee; padre genera N processi figli; ogni figlio genera un
+ nipote; i nipoti sono associati agli N file, devono generare un numero 
+random (r) compreso fra 1 e la lunghezza in linee e poi devono passare 
+ai figli le prime r linee usando il comando head "-r" (-r inteso come la
+ stringa corrispondente); ogni figlio deve ricevere tutte le linee e per
+ ogni linea ricevuta deve mandare al padre una struttura con 3 campi; il
+ padre deve ricevere tali strutture in un ordine bene preciso: prima la 
+prima struttura dal primo figlio, poi la prima struttura dal secondo 
+figlio e così via fino a che tutti i figli non hanno terminato di 
+inviare. Mostrato soluzione e prova di funzionamento.                   
+ </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Mer. 31/05/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        File UNIX - Introdotto struttura del File System
+ fisico (Slide Unix Tabelle 3): concetto di MOUNT. File system logico 
+(Slide Unix Tabelle 4): rispiegato necessità di link software per 
+traversare file system fisici diversi! Rivisto informazioni nell'I-NODE 
+(Slide Unix Tabelle 5) e spiegato significato dei 13 indirizzi (Slide 
+Unix Tabelle 6). Fatto vedere comando DF per vedere i file system fisici
+ montati (con anche opzione -i per vedere gli i-node occupati e liberi) e
+ caratteristiche dei dispositivi /dev/xxx usati come file system fisici.<br>Processi
+ UNIX - Parte C dell'esame del 12 Febbraio 2016: N + 1 parametri, N file
+ e un singolo carattere alfabetico minuscolo (Cx); padre genera N 
+processi figli; ogni figlio è associato ad un file; comunicazione in 
+pipeline dal primo figlio all'ultimo e poi al padre; i figli devono 
+passare in avanti un array dinamico di strutture; al padre deve arrivare
+ un array di N strutture i cui campi vanno stampati insieme a Cx e al 
+pid dei figli corrispondenti. Mostrato soluzione e prova di 
+funzionamento.<br>Mostrato schemi di comunicazione parte C con classificazione dei vari esercizi visti a lezione e proposti ad esercitazione.<br>                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#EEEEEE">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Gio. 01/06/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        NO ESERCITAZIONE, MA SECONDA PROVA IN ITINERE!                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        E                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        4                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        			    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Laboratorio">Il materiale delle esercitazioni si trova seguendo il link</a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                    
+                <tr bgcolor="#FFFFCC">
+                <td>
+                    <div class="text" align="center">
+                        <font size="2"> Lun. 05/06/2023</font>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text"><font size="2">
+                        NO LEZIONE perchè terminato le ore e anzi fatte più di quelle assegnate!                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        L                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                        2                    </font></div>
+                </td>
+                <td>
+                    <div class="text" align="center"><font size="2">
+                                                    <a href="http://www.didattica.agentgroup.unimo.it/wiki/index.php/Sistemi_Operativi_e_Lab.#Slide_dell.27Insegnamento">I lucidi relativi a tutte le lezioni si possono trovare seguendo il link </a>
+                                            </font>
+                    </div>
+                </td>
+            </tr>
+                            </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                <br><b>Legenda:</b>
+                <br>E= Esercitazione
+                <br>L= Lezione
+            </td>
+        </tr>
+        </tbody></table>
+    <br>
+<!--
+    <hr>
+    <center>
+        <font size="2" face="arial">
+            <a href="/">[Home Page]</a>|
+            <a href="www.ingmo.unimore.it/site/home/dipartimento.html">[Dipartimento]</a> |
+            <a href="www.ingmo.unimore.it/site/home/didattica.html">[Offerta Didattica]</a> |
+            <a href="/lab.asp">[Laboratori]</a> | <br>
+            <a href="http://www.dii.unimo.it"> [Dip.Ing. Informazione]</a>&nbsp; <a href="http://www.dima.unimo.it">[Dip.Ing. Materiale e
+                Ambiente]</a>&nbsp; <a href="http://www.dimec.unimo.it">[Dip.Ing. Meccanica e
+                Civile]</a>
+            <br>
+            <br>
+
+            <a href="mailto:web_ing@unimo.it">web_ing@unimo.it</a></font>
+    </center>
+-->
+</center>
+
+<center>
+    <br>
+
+</center>
+
+
+
+    </body><app-content ng-version="16.0.0"></app-content></html>
