@@ -1,0 +1,2 @@
+#column-content{margin-left:-15em }#content{margin-left:15em }#p-logo a,#p-logo a:hover{width:15em }.portlet{width:14em }#p-cactions{left:14em }
+/* cache key: wikidb:resourceloader:filter:minify-css:7:4b02b8957ccc11520034c2de0d2a4333 */
